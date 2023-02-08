@@ -27412,6 +27412,11 @@ USB Shield from Ground. </text>
 <label x="297.18" y="22.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="J5" gate="J1" pin="10"/>
 </segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="D4"/>
+<wire x1="289.56" y1="114.3" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
+<label x="289.56" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
 </net>
 <net name="D7/!CTS!" class="0">
 <segment>
@@ -27763,13 +27768,6 @@ USB Shield from Ground. </text>
 <wire x1="45.72" y1="101.6" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
 <junction x="45.72" y="101.6"/>
 <wire x1="63.5" y1="101.6" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D4_SPI_PICO" class="0">
-<segment>
-<pinref part="B1" gate="G$1" pin="D4"/>
-<wire x1="289.56" y1="114.3" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
-<label x="289.56" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="XBEE_D+/SDA" class="2">
