@@ -13821,17 +13821,17 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="18.76" y1="16.01" x2="16.7974" y2="16.01" width="0.254" layer="1"/>
 <wire x1="16.7974" y1="16.01" x2="16.764" y2="15.9766" width="0.254" layer="1"/>
 <via x="16.764" y="15.9766" extent="1-16" drill="0.3048"/>
-<wire x1="16.764" y1="15.9766" x2="13.1756" y2="15.9766" width="0.254" layer="2"/>
-<wire x1="13.1756" y1="15.9766" x2="13.1572" y2="15.995" width="0.254" layer="2"/>
-<via x="13.1572" y="15.995" extent="1-16" drill="0.3048"/>
+<wire x1="16.764" y1="15.9766" x2="13.0232" y2="15.9766" width="0.254" layer="2"/>
+<wire x1="13.0232" y1="15.9766" x2="13.0048" y2="15.995" width="0.254" layer="2"/>
+<via x="13.0048" y="15.995" extent="1-16" drill="0.3048"/>
 <wire x1="13.2" y1="5.08" x2="13.2" y2="7.54" width="0.254" layer="1"/>
 <wire x1="13.2" y1="7.54" x2="11.43" y2="9.31" width="0.254" layer="1"/>
 <wire x1="11.43" y1="9.31" x2="9.564" y2="11.176" width="0.254" layer="1"/>
 <wire x1="9.564" y1="11.176" x2="3.937" y2="11.176" width="0.254" layer="1"/>
 <wire x1="3.937" y1="11.176" x2="2.54" y2="12.573" width="0.254" layer="1"/>
 <wire x1="2.54" y1="12.573" x2="2.54" y2="12.7" width="0.254" layer="1"/>
-<wire x1="2.54" y1="12.7" x2="9.8622" y2="12.7" width="0.254" layer="1"/>
-<wire x1="9.8622" y1="12.7" x2="13.1572" y2="15.995" width="0.254" layer="1"/>
+<wire x1="2.54" y1="12.7" x2="9.7098" y2="12.7" width="0.254" layer="1"/>
+<wire x1="9.7098" y1="12.7" x2="13.0048" y2="15.995" width="0.254" layer="1"/>
 <wire x1="20.32" y1="33.2994" x2="20.32" y2="16.77086875" width="0.254" layer="1"/>
 <wire x1="21.3106" y1="34.29" x2="20.32" y2="33.2994" width="0.254" layer="1"/>
 <wire x1="21.3106" y1="34.29" x2="21.59" y2="34.29" width="0.254" layer="1"/>
@@ -13898,9 +13898,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </polygon>
 <contactref element="RLED" pad="1"/>
 <contactref element="J6" pad="10"/>
-<via x="31.115" y="19.558" extent="1-16" drill="0.35"/>
-<via x="32.639" y="19.558" extent="1-16" drill="0.35"/>
-<via x="17.018" y="31.242" extent="1-16" drill="0.35"/>
+<via x="31.115" y="19.558" extent="1-16" drill="0.3048"/>
+<via x="32.639" y="19.558" extent="1-16" drill="0.3048"/>
+<via x="17.018" y="31.242" extent="1-16" drill="0.3048"/>
 <contactref element="J3" pad="GND"/>
 <contactref element="J3" pad="GND2"/>
 <contactref element="R7" pad="1"/>
@@ -13912,7 +13912,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="R18" pad="1"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C5" pad="2"/>
-<via x="29.718" y="17.78" extent="1-16" drill="0.35"/>
+<via x="29.718" y="17.78" extent="1-16" drill="0.3048"/>
 <wire x1="38.62" y1="14.46" x2="38.62" y2="15.76" width="0.2032" layer="1"/>
 <wire x1="38.62" y1="15.76" x2="39.37" y2="16.51" width="0.2032" layer="1"/>
 <contactref element="B1" pad="GND@2"/>
@@ -13979,31 +13979,33 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="30.5562" y="26.0604" extent="1-16" drill="0.3048"/>
 <via x="25.1206" y="25.4762" extent="1-16" drill="0.3048"/>
 <via x="32.5374" y="27.5082" extent="1-16" drill="0.3048"/>
-<via x="26.0096" y="14.4272" extent="1-16" drill="0.35"/>
-<via x="20.9296" y="19.2532" extent="1-16" drill="0.35"/>
-<via x="16.8148" y="15.113" extent="1-16" drill="0.35"/>
-<via x="20.955" y="30.4292" extent="1-16" drill="0.35"/>
-<via x="34.8742" y="25.2984" extent="1-16" drill="0.35"/>
-<via x="35.8394" y="37.211" extent="1-16" drill="0.35"/>
-<via x="49.6062" y="40.8432" extent="1-16" drill="0.35"/>
-<via x="47.3202" y="11.4808" extent="1-16" drill="0.35"/>
-<via x="31.75" y="12.7" extent="1-16" drill="0.35"/>
-<via x="24.13" y="12.7" extent="1-16" drill="0.35"/>
-<via x="21.59" y="12.7" extent="1-16" drill="0.35"/>
-<via x="34.29" y="12.7" extent="1-16" drill="0.35"/>
-<via x="17.78" y="12.7" extent="1-16" drill="0.35"/>
-<via x="4.1656" y="11.9634" extent="1-16" drill="0.35"/>
-<via x="4.2164" y="13.3604" extent="1-16" drill="0.35"/>
+<via x="26.0096" y="14.4272" extent="1-16" drill="0.3048"/>
+<via x="20.9296" y="19.2532" extent="1-16" drill="0.3048"/>
+<via x="16.8148" y="15.113" extent="1-16" drill="0.3048"/>
+<via x="20.955" y="30.4292" extent="1-16" drill="0.3048"/>
+<via x="34.8742" y="25.2984" extent="1-16" drill="0.3048"/>
+<via x="35.8394" y="37.211" extent="1-16" drill="0.3048"/>
+<via x="49.6062" y="40.8432" extent="1-16" drill="0.3048"/>
+<via x="47.3202" y="11.4808" extent="1-16" drill="0.3048"/>
+<via x="31.75" y="12.7" extent="1-16" drill="0.3048"/>
+<via x="24.13" y="12.7" extent="1-16" drill="0.3048"/>
+<via x="21.59" y="12.7" extent="1-16" drill="0.3048"/>
+<via x="34.29" y="12.7" extent="1-16" drill="0.3048"/>
+<via x="17.78" y="12.7" extent="1-16" drill="0.3048"/>
+<via x="4.1656" y="11.9634" extent="1-16" drill="0.3048"/>
+<via x="4.2164" y="13.3604" extent="1-16" drill="0.3048"/>
 <via x="2.54" y="5.08" extent="1-16" drill="0.3048"/>
-<via x="8.89" y="16.51" extent="1-16" drill="0.35"/>
-<via x="6.35" y="16.51" extent="1-16" drill="0.35"/>
-<via x="17.78" y="7.62" extent="1-16" drill="0.35"/>
-<via x="38.1" y="7.62" extent="1-16" drill="0.35"/>
-<via x="4.1656" y="10.5918" extent="1-16" drill="0.35"/>
+<via x="8.89" y="16.51" extent="1-16" drill="0.3048"/>
+<via x="6.35" y="16.51" extent="1-16" drill="0.3048"/>
+<via x="17.78" y="7.62" extent="1-16" drill="0.3048"/>
+<via x="38.1" y="7.62" extent="1-16" drill="0.3048"/>
+<via x="4.1656" y="10.5918" extent="1-16" drill="0.3048"/>
 <via x="50.8" y="5.08" extent="1-16" drill="0.3048"/>
 <via x="48.26" y="14.6558" extent="1-16" drill="0.3048"/>
 <via x="48.26" y="13.335" extent="1-16" drill="0.3048"/>
 <via x="14.5034" y="48.3616" extent="1-16" drill="0.3048"/>
+<via x="15.0368" y="14.8082" extent="1-16" drill="0.3048"/>
+<via x="12.9794" y="16.7132" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="3.3V">
 <contactref element="I2C_PU" pad="2"/>
