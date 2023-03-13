@@ -205,17 +205,17 @@
 <wire x1="43.18" y1="50.8" x2="43.18" y2="59.182" width="0.254" layer="21"/>
 <wire x1="15.748" y1="50.546" x2="19.558" y2="53.848" width="0.254" layer="21"/>
 <wire x1="40.132" y1="50.546" x2="35.7886" y2="54.3306" width="0.254" layer="21"/>
-<dimension x1="21.59" y1="6.35" x2="0" y2="6.35" x3="10.795" y3="-11.43" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="34.29" y1="6.35" x2="0" y2="6.35" x3="17.145" y3="-20.32" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="5.08" y1="5.08" x2="0" y2="5.08" x3="2.54" y3="-2.794" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="48.26" y1="5.08" x2="53.34" y2="5.08" x3="50.8" y3="-6.35" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="12.7" y1="5.08" x2="0" y2="5.08" x3="6.35" y3="-6.35" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="5.08" y1="5.08" x2="5.08" y2="0" x3="-3.81" y3="2.54" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="10.16" y1="19.05" x2="10.16" y2="0" x3="-11.43" y3="9.525" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="21.59" y1="26.67" x2="21.59" y2="0" x3="-15.24" y3="13.335" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="21.59" y1="49.53" x2="0" y2="49.53" x3="10.795" y3="67.31" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<dimension x1="34.29" y1="49.53" x2="0" y2="49.53" x3="17.145" y3="71.12" textsize="1.778" textratio="15" layer="21" unit="inch"/>
-<text x="-21.59" y="-6.35" size="1.778" layer="21" font="vector" ratio="15">Units in Inches</text>
+<dimension x1="21.59" y1="6.35" x2="0" y2="6.35" x3="10.795" y3="-11.43" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="34.29" y1="6.35" x2="0" y2="6.35" x3="17.145" y3="-20.32" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="5.08" y1="5.08" x2="0" y2="5.08" x3="2.54" y3="-2.794" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="48.26" y1="5.08" x2="53.34" y2="5.08" x3="50.8" y3="-6.35" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="12.7" y1="5.08" x2="0" y2="5.08" x3="6.35" y3="-6.35" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="5.08" y1="5.08" x2="5.08" y2="0" x3="-3.81" y3="2.54" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="10.16" y1="19.05" x2="10.16" y2="0" x3="-11.43" y3="9.525" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="21.59" y1="26.67" x2="21.59" y2="0" x3="-15.24" y3="13.335" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="21.59" y1="49.53" x2="0" y2="49.53" x3="10.795" y3="67.31" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="34.29" y1="49.53" x2="0" y2="49.53" x3="17.145" y3="71.12" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<text x="-21.59" y="-6.35" size="1.778" layer="47" font="vector" ratio="15">Units in Inches</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
