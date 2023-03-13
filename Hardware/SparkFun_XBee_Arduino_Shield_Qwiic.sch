@@ -12930,7 +12930,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="WRL-17581" constant="no"/>
+<attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12958,7 +12958,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="WRL-17581" constant="no"/>
+<attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -14386,7 +14386,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="PLED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="ALED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
-<part name="LOGO3" library="SparkFun-Aesthetics" deviceset="QWIIC_LOGO" device="_3MM" value="QWIIC_LOGO_3MM"/>
+<part name="LOGO3" library="SparkFun-Aesthetics" deviceset="QWIIC_LOGO" device="_4MM" value="QWIIC_LOGO_4MM"/>
 <part name="U2" library="SparkFun-IC-Power" deviceset="AP63203" device="" value="AP63203"/>
 <part name="L1" library="SparkFun-Coils" deviceset="3.9UH" device="" value="3.9UH"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
@@ -14399,7 +14399,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="J2" library="xbee_smart_modem" deviceset="XBEE_UPDATE" device="XBEE_SMD_SILK"/>
+<part name="J2" library="xbee_smart_modem" deviceset="XBEE_UPDATE" device="XBEE_SMD"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="10NF" device="-0603-50V-10%" value="10nF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="10NF" device="-0603-50V-10%" value="10nF"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
