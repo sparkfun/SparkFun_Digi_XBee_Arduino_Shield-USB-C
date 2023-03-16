@@ -19025,7 +19025,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$69" library="top" package="##DTR##27" value="" x="24.257" y="29.21" smashed="yes"/>
 <element name="U$70" library="top" package="#PICO#24" value="" x="31.369" y="26.543" smashed="yes"/>
 <element name="U$71" library="topmirror" package="DIRECT_USB33" value="" x="21.59" y="7.366" smashed="yes"/>
-<element name="U$72" library="botmirror" package="#DUSB#31" value="" x="14.224" y="20.193" smashed="yes"/>
+<element name="U$72" library="botmirror" package="#DUSB#31" value="" x="14.224" y="20.303" smashed="yes"/>
 <element name="U$74" library="top" package="ASC32" value="" x="50.8" y="16.764" smashed="yes"/>
 <element name="U$1" library="top" package="RSSI31" value="" x="50.8" y="13.97" smashed="yes"/>
 <element name="U$2" library="top" package="PWR29" value="" x="50.8" y="11.303" smashed="yes"/>
@@ -19082,7 +19082,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="VALUE" x="8.1534" y="29.8196" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="U$83" library="top" package="D727" value="" x="48.9204" y="41.7576" smashed="yes"/>
-<element name="U$73" library="top" package="#I2C#13751" value="" x="13.3858" y="17.7292" smashed="yes"/>
+<element name="U$73" library="top" package="#I2C#13751" value="" x="13.4058" y="17.7892" smashed="yes"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="BLANK" value="SFE_LOGO_NAMEBLANK" x="-30.48" y="-38.1" smashed="yes"/>
 <element name="U$88" library="top" package="#IOREF#6" value="" x="47.4726" y="21.5392" smashed="yes"/>
 <element name="U$46" library="topmirror" package="#PICO#24" value="" x="5.461" y="22.86" smashed="yes"/>
