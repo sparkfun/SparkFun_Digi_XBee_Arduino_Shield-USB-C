@@ -24,7 +24,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -34,7 +34,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -217,6 +217,13 @@
 <dimension x1="34.29" y1="49.53" x2="0" y2="49.53" x3="17.145" y3="71.12" textsize="1.778" layer="47" unit="inch"/>
 <text x="-21.59" y="-6.35" size="1.778" layer="47" font="vector">Units in Inches</text>
 <rectangle x1="11.049" y1="36.3728" x2="11.176" y2="36.9062" layer="41"/>
+<text x="6.428" y="42.619" size="1.778" layer="1" font="vector" ratio="15">1</text>
+<text x="7.698" y="42.619" size="1.778" layer="2" font="vector" ratio="15">2</text>
+<text x="8.968" y="42.619" size="1.778" layer="15" font="vector" ratio="15">3</text>
+<text x="11.508" y="42.619" size="1.778" layer="16" font="vector" ratio="15" rot="SMR0">4</text>
+<text x="60.5" y="44.5" size="1.778" layer="51" font="vector" ratio="15">Four Layer Board</text>
+<text x="60.5" y="41" size="1.778" layer="51" font="vector" ratio="15">1.6mm Thickness</text>
+<text x="60.5" y="37.5" size="1.778" layer="51" font="vector" ratio="15">Lead Free HASL</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -1249,6 +1256,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </polygon>
 </package>
 <package name="BLANK">
+</package>
+<package name="ORDERING_INSTRUCTIONS">
+<description>&lt;h3&gt;Special Ordering Instructions Alert&lt;/h3&gt;
+&lt;p&gt;Indicates that the PCB material, colors, copper weights, and/or thickness are non-standard.&lt;/p&gt;
+&lt;p&gt;(Standard is 1.6mm FR4, 1 oz copper, immersion silver plating, red soldermask, white silkscreen.)&lt;/p&gt;
+&lt;p&gt;Use 0.7" Vector font @ 8% ratio</description>
+<text x="1.27" y="-1.27" size="3.048" layer="51" font="vector" ratio="15" align="top-left">Ordering Instructions:</text>
+<wire x1="0" y1="0" x2="101.6" y2="0" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="0" x2="101.6" y2="-8.89" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="-8.89" x2="101.6" y2="-50.8" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="-50.8" x2="0" y2="-50.8" width="0.2032" layer="51"/>
+<wire x1="0" y1="-50.8" x2="0" y2="-8.89" width="0.2032" layer="51"/>
+<wire x1="0" y1="-8.89" x2="0" y2="0" width="0.2032" layer="51"/>
+<wire x1="0" y1="-8.89" x2="101.6" y2="-8.89" width="0.2032" layer="51"/>
+<text x="1.27" y="-6.35" size="1.778" layer="51" font="vector" align="top-left">(Add these comments when uploading gerbers.)</text>
 </package>
 </packages>
 </library>
@@ -19066,6 +19088,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$46" library="topmirror" package="#PICO#24" value="" x="5.461" y="22.86" smashed="yes"/>
 <element name="U$89" library="bot" package="#IOREF#35" value="" x="48.26" y="25.4" smashed="yes" rot="MR90"/>
 <element name="U$66" library="top" package="VIN5" value="" x="48.6094" y="36.362" smashed="yes"/>
+<element name="LOGO4" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="SPECIAL_INSTRUCTIONS-ORDERING" x="58" y="56.5" smashed="yes"/>
 </elements>
 <signals>
 <signal name="D11/SDA">
@@ -20056,7 +20079,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="U1" pad="1"/>
 <contactref element="S3" pad="5"/>
 <contactref element="S3" pad="2"/>
-<wire x1="12.9342" y1="18.9992" x2="12.985" y2="19.05" width="0.254" layer="1"/>
 <wire x1="20.03" y1="15.51" x2="21.606" y2="15.51" width="0.254" layer="1"/>
 <wire x1="22.4536" y1="18.288" x2="22.4536" y2="16.3576" width="0.254" layer="1"/>
 <via x="22.4536" y="18.288" extent="1-16" drill="0.3048"/>
