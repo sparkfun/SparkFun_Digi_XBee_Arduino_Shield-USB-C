@@ -27529,8 +27529,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="76.2" y="259.08" size="1.778" layer="97" font="vector" align="center">VCC Range: 3.3V - 4.3V</text>
-<text x="223.774" y="261.366" size="2.54" layer="94" font="vector" align="center">Buck Converter - AP63203</text>
+<text x="76.2" y="266.7" size="1.778" layer="97" font="vector" align="center">VCC Range: 3.3V - 4.3V</text>
+<text x="223.774" y="271.526" size="2.54" layer="94" font="vector" align="center">Buck Converter - AP63203</text>
 <text x="388.62" y="93.98" size="2.54" layer="94" font="vector" align="center">Qwiic - I2C</text>
 <text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v01</text>
 <text x="363.22" y="10.16" size="2.54" layer="94" font="vector" align="center">Elias Santistevan</text>
@@ -27539,7 +27539,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 Iout: 2A Max</text>
 <text x="388.62" y="88.9" size="1.778" layer="97" font="vector" align="center">Cut I2C jumper to remove pullups.</text>
 <text x="185.42" y="66.04" size="1.778" layer="97" font="vector" align="center">Cut respective jumper to sever power to LED.</text>
-<text x="76.2" y="264.16" size="2.54" layer="94" font="vector" align="center">RF Module - XBee 3 Cat 1 Smart Modem</text>
+<text x="78.74" y="271.78" size="2.54" layer="94" font="vector" align="center">RF Module - XBee 3 Cat 1 Smart Modem</text>
 <text x="279.4" y="66.04" size="2.54" layer="94" font="vector" align="center">0.1" Headers</text>
 <text x="380.746" y="208.788" size="1.778" layer="97" font="vector">Cut SHLD/SHLD1 jumper to disconnect
 respective USB Shield from Ground. </text>
@@ -27568,8 +27568,8 @@ respective USB Shield from Ground. </text>
 <text x="327.66" y="152.4" size="2.54" layer="94" font="vector" align="center">XBee to R3 Footprint Level Translation</text>
 <text x="327.66" y="147.32" size="1.778" layer="97" font="vector" align="center">3.3V (VCCA) -&gt; 3.3V - 5V (VCCB)</text>
 <wire x1="330.2" y1="101.6" x2="228.6" y2="101.6" width="0.2032" layer="97" style="longdash"/>
-<text x="254" y="93.98" size="2.54" layer="94" font="vector" align="center">IOREF Selection </text>
-<text x="254" y="88.9" size="1.778" layer="97" font="vector" align="center">USE IF THERE IS NO
+<text x="261.62" y="91.44" size="2.54" layer="94" font="vector" align="center">IOREF Selection </text>
+<text x="261.62" y="86.36" size="1.778" layer="97" font="vector" align="center">USE IF THERE IS NO
 IOREF ON YOUR BASE BOARD</text>
 <text x="66.04" y="71.12" size="2.54" layer="94" font="vector" align="center">USB Multiplexer - FSUSB30</text>
 <text x="358.14" y="266.7" size="1.778" layer="97" font="vector" align="center">Use "UART" USB-C for general operation. </text>
@@ -27959,8 +27959,8 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="GND10" gate="1" x="281.94" y="111.76" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="281.94" y="111.506" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="SUPPLY21" gate="G$1" x="251.46" y="142.24" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="251.46" y="145.034" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
+<instance part="SUPPLY21" gate="G$1" x="251.46" y="144.78" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="251.46" y="147.574" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="GND20" gate="1" x="266.7" y="106.68" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="266.7" y="106.426" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
@@ -28452,7 +28452,7 @@ IOREF ON YOUR BASE BOARD</text>
 <segment>
 <pinref part="U6" gate="G$1" pin="VCCA"/>
 <wire x1="254" y1="129.54" x2="251.46" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="129.54" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="129.54" x2="251.46" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
 <pinref part="U6" gate="G$1" pin="OE"/>
 <wire x1="254" y1="127" x2="251.46" y2="127" width="0.1524" layer="91" style="longdash"/>
