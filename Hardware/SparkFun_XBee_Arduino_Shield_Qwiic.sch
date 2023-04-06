@@ -27611,7 +27611,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="76.2" y="266.7" size="1.778" layer="97" font="vector" align="center">VCC Range: 3.3V - 4.3V</text>
 <text x="223.774" y="271.526" size="2.54" layer="94" font="vector" align="center">Buck Converter - AP63203</text>
 <text x="388.62" y="93.98" size="2.54" layer="94" font="vector" align="center">Qwiic - I2C</text>
-<text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v01</text>
+<text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v02</text>
 <text x="363.22" y="10.16" size="2.54" layer="94" font="vector" align="center">Elias Santistevan</text>
 <text x="187.96" y="71.12" size="2.54" layer="94" font="vector" align="center">Buttons and LEDs</text>
 <text x="223.52" y="254" size="1.778" layer="97" font="vector" align="center">VIN: 3.8 - 5.5V
@@ -28142,6 +28142,16 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="248.92" y1="139.7" x2="254" y2="139.7" width="0.1524" layer="91"/>
 <label x="248.92" y="139.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="U6" gate="G$1" pin="A1"/>
+</segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="360.68" y1="58.42" x2="363.22" y2="58.42" width="0.1524" layer="91"/>
+<label x="360.68" y="58.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="4"/>
+<wire x1="406.4" y1="71.12" x2="411.48" y2="71.12" width="0.1524" layer="91"/>
+<label x="411.48" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -28685,6 +28695,12 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="365.76" y="137.16" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="U7" gate="G$1" pin="A2"/>
 </segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<label x="175.26" y="48.26" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="172.72" y1="45.72" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="48.26" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="D8/!DTR!" class="0">
 <segment>
@@ -28779,6 +28795,12 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="365.76" y1="132.08" x2="370.84" y2="132.08" width="0.1524" layer="91"/>
 <label x="365.76" y="132.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="U7" gate="G$1" pin="A4"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<label x="175.26" y="50.8" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="167.64" y1="45.72" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="50.8" x2="175.26" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D6/!RTS!" class="0">
@@ -29029,9 +29051,9 @@ IOREF ON YOUR BASE BOARD</text>
 <junction x="370.84" y="248.92"/>
 </segment>
 <segment>
-<label x="25.4" y="114.3" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U4" gate="U$1" pin="USBDM"/>
-<wire x1="25.4" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<label x="25.4" y="111.76" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U4" gate="U$1" pin="USBDP"/>
+<wire x1="25.4" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D-" class="2">
@@ -29045,9 +29067,9 @@ IOREF ON YOUR BASE BOARD</text>
 <junction x="375.92" y="246.38"/>
 </segment>
 <segment>
-<label x="25.4" y="111.76" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U4" gate="U$1" pin="USBDP"/>
-<wire x1="25.4" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
+<label x="25.4" y="114.3" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U4" gate="U$1" pin="USBDM"/>
+<wire x1="25.4" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="XBEE_D+/SDA" class="2">
@@ -29271,16 +29293,6 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="284.48" y="139.7" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U6" gate="G$1" pin="B1"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="406.4" y1="71.12" x2="411.48" y2="71.12" width="0.1524" layer="91"/>
-<label x="411.48" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="360.68" y1="58.42" x2="363.22" y2="58.42" width="0.1524" layer="91"/>
-<label x="360.68" y="58.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="D3/SPI_!CS!-TRANS" class="0">
 <segment>
@@ -29353,12 +29365,6 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="129.54" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="A2"/>
 </segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="1"/>
-<label x="175.26" y="50.8" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="167.64" y1="45.72" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="50.8" x2="175.26" y2="50.8" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="D9/!SLEEP!-TRANS" class="0">
 <segment>
@@ -29394,12 +29400,6 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="129.54" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
 <label x="129.54" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="A4"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<label x="175.26" y="48.26" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="172.72" y1="45.72" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="48.26" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D0-TRANS" class="0">
