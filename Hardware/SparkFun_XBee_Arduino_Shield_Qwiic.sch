@@ -960,13 +960,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="3.3V_SW">
-<description>&lt;h3&gt;3.3V Voltage Supply (Switched)&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="3.3V_SW" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -1042,20 +1035,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3.3V_SW" prefix="SUPPLY">
-<description>&lt;h3&gt;3.3V Supply Symbol (Switched)&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V_SW" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -28848,7 +28827,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R10" library="SparkFun-Resistors" deviceset="330OHM" device="-0603-1/10W-1%" value="330"/>
 <part name="GND41" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="IO4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
-<part name="SUPPLY28" library="SparkFun-PowerSymbols" deviceset="3.3V_SW" device=""/>
 <part name="S4" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
 <part name="R18" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="GND42" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -29411,9 +29389,6 @@ IOREF ON YOUR BASE BOARD</text>
 </instance>
 <instance part="IO4" gate="G$1" x="182.88" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="187.96" y="17.272" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
-</instance>
-<instance part="SUPPLY28" gate="G$1" x="129.54" y="142.24" smashed="yes">
-<attribute name="VALUE" x="129.54" y="145.034" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="S4" gate="G$1" x="406.4" y="238.76" smashed="yes">
 <attribute name="NAME" x="406.4" y="246.634" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -30956,14 +30931,6 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="182.88" y1="22.86" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V_SW" class="0">
-<segment>
-<pinref part="B1" gate="G$1" pin="3.3V"/>
-<wire x1="144.78" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="104.14" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="SUPPLY28" gate="G$1" pin="3.3V_SW"/>
-</segment>
-</net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="S4" gate="G$1" pin="3"/>
@@ -30992,6 +30959,13 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="360.68" y1="195.58" x2="360.68" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="198.12" x2="350.52" y2="198.12" width="0.1524" layer="91"/>
 <label x="350.52" y="198.12" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="3.3V"/>
+<wire x1="144.78" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="104.14" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
+<label x="132.08" y="142.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -31071,8 +31045,9 @@ IOREF ON YOUR BASE BOARD</text>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="VIN"/>
-<wire x1="144.78" y1="109.22" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="109.22" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="109.22" x2="139.7" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
 <label x="142.24" y="142.24" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
