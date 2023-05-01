@@ -28828,7 +28828,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND41" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="IO4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="S4" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
-<part name="R18" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="R18" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
 <part name="GND42" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY34" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY38" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -30314,10 +30314,10 @@ IOREF ON YOUR BASE BOARD</text>
 <junction x="124.46" y="223.52"/>
 </segment>
 <segment>
-<pinref part="S4" gate="G$1" pin="4"/>
-<wire x1="411.48" y1="231.14" x2="416.56" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="231.14" x2="416.56" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="SUPPLY34" gate="G$1" pin="VIN"/>
+<pinref part="S4" gate="G$1" pin="3"/>
+<wire x1="416.56" y1="243.84" x2="416.56" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="243.84" x2="416.56" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
@@ -30933,14 +30933,14 @@ IOREF ON YOUR BASE BOARD</text>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="S4" gate="G$1" pin="3"/>
-<wire x1="411.48" y1="243.84" x2="414.02" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="243.84" x2="414.02" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="S4" gate="G$1" pin="6"/>
-<wire x1="414.02" y1="236.22" x2="414.02" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="236.22" x2="414.02" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="231.14" x2="414.02" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="411.48" y1="236.22" x2="414.02" y2="236.22" width="0.1524" layer="91"/>
-<junction x="414.02" y="236.22"/>
 <pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="S4" gate="G$1" pin="4"/>
+<wire x1="411.48" y1="231.14" x2="414.02" y2="231.14" width="0.1524" layer="91"/>
+<junction x="414.02" y="231.14"/>
 </segment>
 </net>
 <net name="3V3_R3" class="0">
