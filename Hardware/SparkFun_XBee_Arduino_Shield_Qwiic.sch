@@ -29368,12 +29368,12 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="GND37" gate="1" x="251.46" y="106.68" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="251.46" y="106.426" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R9" gate="G$1" x="368.3" y="119.38" smashed="yes" rot="R90">
-<attribute name="NAME" x="366.776" y="119.38" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="369.824" y="119.38" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R9" gate="G$1" x="368.3" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="366.776" y="116.84" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="369.824" y="116.84" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="GND38" gate="1" x="368.3" y="109.22" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="368.3" y="108.966" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
+<instance part="GND38" gate="1" x="368.3" y="106.68" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="368.3" y="106.426" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
 <instance part="D6" gate="G$1" x="182.88" y="30.48" smashed="yes">
 <attribute name="NAME" x="188.468" y="30.607" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -29788,7 +29788,7 @@ IOREF ON YOUR BASE BOARD</text>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="GND38" gate="1" pin="GND"/>
-<wire x1="368.3" y1="111.76" x2="368.3" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="109.22" x2="368.3" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IO4" gate="G$1" pin="1"/>
@@ -30369,9 +30369,9 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="127" y="208.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="172.72" y1="109.22" x2="170.18" y2="109.22" width="0.1524" layer="91"/>
-<label x="172.72" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="B1" gate="G$1" pin="*D9"/>
+<pinref part="U7" gate="G$1" pin="A8"/>
+<wire x1="365.76" y1="124.46" x2="370.84" y2="124.46" width="0.1524" layer="91"/>
+<label x="365.76" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -30907,7 +30907,7 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="365.76" y="134.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="368.3" y1="134.62" x2="370.84" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="124.46" x2="368.3" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="121.92" x2="368.3" y2="134.62" width="0.1524" layer="91"/>
 <junction x="368.3" y="134.62"/>
 </segment>
 <segment>
@@ -31067,6 +31067,18 @@ IOREF ON YOUR BASE BOARD</text>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="370.84" y1="193.04" x2="368.3" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="EN_TRANS" class="0">
+<segment>
+<pinref part="U7" gate="G$1" pin="B8"/>
+<wire x1="396.24" y1="124.46" x2="401.32" y2="124.46" width="0.1524" layer="91"/>
+<label x="401.32" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="*D9"/>
+<wire x1="172.72" y1="109.22" x2="170.18" y2="109.22" width="0.1524" layer="91"/>
+<label x="172.72" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 </nets>
