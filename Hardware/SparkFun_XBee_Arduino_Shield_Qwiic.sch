@@ -28828,7 +28828,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND41" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="IO4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="S4" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
-<part name="R18" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
+<part name="R18" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="GND42" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY34" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY38" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -28836,8 +28836,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2307L" value="3.1A/30V/105mΩ"/>
 <part name="R20" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="GND44" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2307L" value="3.1A/30V/105mΩ"/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2307L" value="3.1A/30V/105mΩ"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-AO3404A" value="5.8A/30V/35mΩ"/>
 <part name="GND43" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -30313,16 +30313,16 @@ IOREF ON YOUR BASE BOARD</text>
 <junction x="119.38" y="223.52"/>
 </segment>
 <segment>
-<pinref part="SUPPLY34" gate="G$1" pin="VIN"/>
-<pinref part="S4" gate="G$1" pin="3"/>
-<wire x1="416.56" y1="243.84" x2="416.56" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="243.84" x2="416.56" y2="243.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="373.38" y1="251.46" x2="375.92" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="251.46" x2="375.92" y2="254" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
+</segment>
+<segment>
+<pinref part="S4" gate="G$1" pin="1"/>
+<wire x1="411.48" y1="238.76" x2="416.56" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="SUPPLY34" gate="G$1" pin="VIN"/>
+<wire x1="416.56" y1="246.38" x2="416.56" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -30930,7 +30930,7 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="182.88" y1="22.86" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="OFF_VIN" class="0">
+<net name="OFF_XB" class="0">
 <segment>
 <pinref part="S4" gate="G$1" pin="6"/>
 <wire x1="414.02" y1="236.22" x2="414.02" y2="231.14" width="0.1524" layer="91"/>
@@ -31036,18 +31036,18 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="345.44" y="254" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S4" gate="G$1" pin="1"/>
-<wire x1="411.48" y1="238.76" x2="419.1" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="419.1" y1="238.76" x2="419.1" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="419.1" y1="246.38" x2="421.64" y2="246.38" width="0.1524" layer="91"/>
-<label x="421.64" y="246.38" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
 <pinref part="B1" gate="G$1" pin="VIN"/>
 <wire x1="144.78" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="109.22" x2="139.7" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
 <label x="142.24" y="142.24" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S4" gate="G$1" pin="3"/>
+<wire x1="411.48" y1="243.84" x2="419.1" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="246.38" x2="421.64" y2="246.38" width="0.1524" layer="91"/>
+<label x="421.64" y="246.38" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="419.1" y1="243.84" x2="419.1" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
