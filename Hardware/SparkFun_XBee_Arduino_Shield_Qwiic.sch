@@ -28963,10 +28963,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-AO3404A" value="5.8A/30V/35mΩ"/>
 <part name="GND43" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R19" library="SparkFun-Resistors" deviceset="10OHM" device="-0603-1/10W-5%" value="10"/>
+<part name="R19" library="SparkFun-Resistors" deviceset="10OHM" device="-0402-1/16W-5%" value="10Ω"/>
 <part name="R21" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="R22" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="R23" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="R23" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -29021,7 +29021,7 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="391.16" y1="279.4" x2="391.16" y2="160.02" width="0.2032" layer="97" style="longdash"/>
 <text x="406.4" y="271.78" size="2.54" layer="94" font="vector" align="center">Switches</text>
 <text x="360.68" y="274.32" size="2.54" layer="94" font="vector" align="center">Power Control</text>
-<text x="358.14" y="261.62" size="1.778" layer="97" font="vector" align="center">Bi-Directional Power Switch</text>
+<text x="358.14" y="264.16" size="1.778" layer="97" font="vector" align="center">Bi-Directional Power Switch</text>
 </plain>
 <instances>
 <instance part="J4" gate="G$1" x="398.78" y="66.04" smashed="yes">
@@ -29545,15 +29545,15 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="GND44" gate="1" x="416.56" y="165.1" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="416.56" y="164.846" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="Q1" gate="G$1" x="368.3" y="248.92" smashed="yes" rot="MR90">
-<attribute name="NAME" x="369.316" y="256.54" size="1.778" layer="95" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="373.38" y="253.746" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="Q1" gate="G$1" x="368.3" y="251.46" smashed="yes" rot="MR90">
+<attribute name="NAME" x="369.316" y="259.08" size="1.778" layer="95" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="373.38" y="256.286" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="Q2" gate="G$1" x="353.06" y="248.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="354.076" y="258.318" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="Q2" gate="G$1" x="353.06" y="251.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="354.076" y="260.858" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="375.92" y="254" smashed="yes">
-<attribute name="VALUE" x="375.92" y="256.794" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY2" gate="G$1" x="375.92" y="256.54" smashed="yes">
+<attribute name="VALUE" x="375.92" y="259.334" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="Q4" gate="NMOS" x="363.22" y="215.9" smashed="yes" rot="MR0">
 <attribute name="NAME" x="357.378" y="218.186" size="1.778" layer="95" font="vector" rot="MR0"/>
@@ -30441,8 +30441,8 @@ IOREF ON YOUR BASE BOARD</text>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="373.38" y1="251.46" x2="375.92" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="251.46" x2="375.92" y2="254" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="254" x2="375.92" y2="254" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="254" x2="375.92" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
@@ -31126,14 +31126,14 @@ IOREF ON YOUR BASE BOARD</text>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="360.68" y1="233.68" x2="360.68" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="236.22" x2="355.6" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="236.22" x2="355.6" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="236.22" x2="355.6" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="360.68" y1="236.22" x2="360.68" y2="238.76" width="0.1524" layer="91"/>
 <junction x="360.68" y="236.22"/>
 <wire x1="360.68" y1="238.76" x2="360.68" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="238.76" x2="365.76" y2="238.76" width="0.1524" layer="91"/>
 <junction x="360.68" y="238.76"/>
-<wire x1="365.76" y1="238.76" x2="365.76" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="238.76" x2="365.76" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -31152,10 +31152,10 @@ IOREF ON YOUR BASE BOARD</text>
 </net>
 <net name="VIN_R3" class="0">
 <segment>
-<wire x1="347.98" y1="251.46" x2="345.44" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="251.46" x2="345.44" y2="254" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="254" x2="345.44" y2="254" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="254" x2="345.44" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<label x="345.44" y="254" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="345.44" y="256.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="VIN"/>
@@ -31203,14 +31203,15 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="172.72" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="SOURCE" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="363.22" y1="251.46" x2="360.68" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="254" x2="360.68" y2="254" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="360.68" y1="251.46" x2="358.14" y2="251.46" width="0.1524" layer="91"/>
-<junction x="360.68" y="251.46"/>
+<wire x1="360.68" y1="254" x2="363.22" y2="254" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="251.46" x2="360.68" y2="254" width="0.1524" layer="91"/>
+<junction x="360.68" y="254"/>
 </segment>
 </net>
 </nets>
