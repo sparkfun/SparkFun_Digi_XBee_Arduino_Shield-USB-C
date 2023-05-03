@@ -20222,10 +20222,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="PROD_ID" value="TRANS-12988" x="39.243" y="26.67" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="VALUE" x="39.243" y="28.321" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="R19" library="SparkFun-Resistors" package="0603" value="10k" x="45.212" y="39.497" smashed="yes" rot="R90">
+<element name="R19" library="SparkFun-Resistors" package="0603" value="10" x="45.212" y="39.497" smashed="yes" rot="R90">
 <attribute name="NAME" x="44.45" y="39.497" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-00824" x="45.212" y="39.497" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="VALUE" x="45.974" y="39.497" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-09834" x="45.212" y="39.497" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="VALUE" value="10" x="45.974" y="39.497" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="R21" library="SparkFun-Resistors" package="0603" value="10k" x="42.418" y="26.543" smashed="yes" rot="R90">
 <attribute name="NAME" x="41.656" y="26.543" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -20254,6 +20254,11 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$52" library="top" package="#PLED#20" value="" x="45.5168" y="2.9972" smashed="yes" rot="MR0"/>
 <element name="U$93" library="pot" package="#IOLED#5" value="" x="47.117" y="10.16" smashed="yes" rot="MR0"/>
 <element name="U$94" library="pot" package="IO49" value="" x="50.8762" y="11.3538" smashed="yes"/>
+<element name="R23" library="SparkFun-Resistors" package="0603" value="10k" x="-29.21" y="-41.91" smashed="yes">
+<attribute name="NAME" x="-29.21" y="-41.148" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-00824" x="-29.21" y="-41.91" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="VALUE" x="-29.21" y="-42.672" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="D11/SDA">
@@ -21800,18 +21805,12 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="41.431" y1="29.21" x2="41.431" y2="30.3632125" width="0.254" layer="1"/>
 </signal>
 <signal name="N$25">
-<contactref element="Q1" pad="2"/>
-<contactref element="Q2" pad="2"/>
 <contactref element="Q2" pad="1"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="R19" pad="1"/>
-<wire x1="46.752" y1="38.796" x2="46.752" y2="36.896" width="0.254" layer="1"/>
-<wire x1="46.752" y1="36.896" x2="43.672" y2="36.896" width="0.254" layer="1"/>
-<wire x1="43.672" y1="36.896" x2="43.672" y2="38.796" width="0.254" layer="1"/>
 <wire x1="46.752" y1="38.796" x2="45.361" y2="38.796" width="0.254" layer="1"/>
 <wire x1="45.361" y1="38.796" x2="45.212" y2="38.647" width="0.254" layer="1"/>
 <wire x1="45.212" y1="38.647" x2="45.063" y2="38.796" width="0.254" layer="1"/>
-<wire x1="45.063" y1="38.796" x2="43.672" y2="38.796" width="0.254" layer="1"/>
 <polygon width="0.254" layer="1" thermals="no">
 <vertex x="47.117" y="35.433"/>
 <vertex x="47.117" y="38.989"/>
@@ -21822,6 +21821,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <vertex x="43.561" y="35.179"/>
 <vertex x="46.863" y="35.179"/>
 </polygon>
+<contactref element="R23" pad="2"/>
+<wire x1="43.672" y1="36.896" x2="45.212" y2="38.647" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.36" y1="-41.91" x2="43.672" y2="36.896" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="R19" pad="2"/>
@@ -21887,6 +21889,13 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="33.0454" y1="35.5854" x2="36.9062" y2="35.5854" width="0.254" layer="15"/>
 <wire x1="36.9062" y1="35.5854" x2="38.5318" y2="37.211" width="0.254" layer="15"/>
 <wire x1="47.52" y1="42.7" x2="48.2574" y2="42.7" width="0.254" layer="1"/>
+</signal>
+<signal name="N$16">
+<contactref element="Q1" pad="2"/>
+<contactref element="Q2" pad="2"/>
+<contactref element="R23" pad="1"/>
+<wire x1="46.752" y1="36.896" x2="43.672" y2="38.796" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.06" y1="-41.91" x2="43.672" y2="38.796" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
