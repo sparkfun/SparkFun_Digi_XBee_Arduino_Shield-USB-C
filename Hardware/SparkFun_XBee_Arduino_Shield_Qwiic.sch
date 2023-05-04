@@ -306,13 +306,13 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 <package name="1210">
 <description>&lt;p&gt;&lt;b&gt;Generic 3225 (1210) package&lt;/b&gt;&lt;/p&gt;
@@ -796,6 +796,21 @@ CAP-09321</description>
 </technology>
 </technologies>
 </device>
+<device name="-0402_TIGHT_50V-5%-C0G/NP0" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="CBR04C470J5GAC"/>
+<attribute name="PROD_ID" value="CAP-16699"/>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VALUE" value="47pF"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="10PF" prefix="C">
@@ -1211,23 +1226,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <circle x="3.81" y="0" radius="0.523634375" width="0" layer="29"/>
 <circle x="-3.81" y="0" radius="1.02390625" width="0" layer="30"/>
 <circle x="3.81" y="0" radius="1.04726875" width="0" layer="30"/>
-</package>
-<package name="1206">
-<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 </packages>
 <symbols>
@@ -1784,111 +1782,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technology name="">
 <attribute name="PROD_ID" value="RES-15185"/>
 <attribute name="VALUE" value="1M"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="10OHM" prefix="R">
-<description>&lt;h3&gt;10Ω resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-1206-1/4W-1%" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08705"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT-1/4W-1%" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12180"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT_KIT-1/4W-1%" package="AXIAL-0.1-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12180"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12180"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12180"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12581"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-1/10W-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-09834"/>
-<attribute name="VALUE" value="10"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402-1/16W-5%" package="0402-TIGHT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-16072" constant="no"/>
-<attribute name="VALUE" value="10Ω" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -22540,42 +22433,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="4" y1="-6" x2="-4" y2="-6" width="0.3048" layer="20"/>
 <wire x1="-4" y1="-6" x2="-4" y2="-10.16" width="0.3048" layer="20"/>
 </package>
-<package name="JST04_1MM_VERT">
-<description>&lt;h3&gt;Vertical Qwiic Connector&lt;/h3&gt;
-
-&lt;p&gt;Physical and Electrical Charactersistics&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Voltage Rating: 50V&lt;/li&gt;
-&lt;li&gt;Current Rating 1.0A&lt;/li&gt;
-&lt;li&gt;Contact Resistance: 20 milliohms&lt;/li&gt;
-&lt;li&gt;ROHS Compliant&lt;/li&gt;
-&lt;li&gt;SMD Pitch: 1mm&lt;/li&gt;
-&lt;li&gt;Small pad size: .6mm x 1.55mm&lt;/li&gt;
-&lt;li&gt;Large pad size: 1.2mm x 2.0mm&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<text x="0.016" y="4.56633125" size="0.6096" layer="25">&gt;NAME</text>
-<text x="0.016" y="-1.29633125" size="0.6096" layer="27">&gt;VALUE</text>
-<smd name="1" x="-1.478" y="0.775" dx="0.6" dy="1.55" layer="1"/>
-<smd name="2" x="-0.478" y="0.775" dx="0.6" dy="1.55" layer="1"/>
-<smd name="3" x="0.522" y="0.775" dx="0.6" dy="1.55" layer="1"/>
-<smd name="4" x="1.522" y="0.775" dx="0.6" dy="1.55" layer="1"/>
-<smd name="NC1" x="-2.778" y="3.2" dx="1.2" dy="2" layer="1"/>
-<smd name="NC2" x="2.822" y="3.2" dx="1.2" dy="2" layer="1"/>
-<wire x1="1.912" y1="3.87" x2="-1.878" y2="3.87" width="0.2032" layer="21"/>
-<wire x1="-3.218" y1="1.33" x2="-3.218" y2="0.68" width="0.2032" layer="21"/>
-<wire x1="-3.218" y1="0.68" x2="-2.458" y2="0.68" width="0.2032" layer="21"/>
-<wire x1="3.272" y1="1.35" x2="3.272" y2="0.66" width="0.2032" layer="21"/>
-<wire x1="3.272" y1="0.66" x2="2.542" y2="0.66" width="0.2032" layer="21"/>
-<circle x="-1.948" y="-0.43" radius="0.2032" width="0" layer="21"/>
-<wire x1="-2.921" y1="3.556" x2="-3.302" y2="3.556" width="0.1" layer="51"/>
-<wire x1="-3.302" y1="3.556" x2="-3.302" y2="3.175" width="0.1" layer="51"/>
-<wire x1="-3.302" y1="3.175" x2="-2.921" y2="3.175" width="0.1" layer="51"/>
-<wire x1="2.945" y1="3.154" x2="3.326" y2="3.154" width="0.1" layer="51"/>
-<wire x1="3.326" y1="3.154" x2="3.326" y2="3.535" width="0.1" layer="51"/>
-<wire x1="3.326" y1="3.535" x2="2.945" y2="3.535" width="0.1" layer="51"/>
-</package>
 <package name="1X10">
 <description>&lt;h3&gt;Plated Through Hole -10 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -23853,6 +23710,41 @@ Holes are offset 0.005" to hold pins in place while soldering.
 <vertex x="4.618" y="-4.78"/>
 <vertex x="4.618" y="-5.4" curve="-90"/>
 </polygon>
+</package>
+<package name="JST04_1MM_VERT">
+<description>&lt;h3&gt;Vertical Qwiic Connector&lt;/h3&gt;
+
+&lt;p&gt;Physical and Electrical Charactersistics&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Voltage Rating: 50V&lt;/li&gt;
+&lt;li&gt;Current Rating 1.0A&lt;/li&gt;
+&lt;li&gt;Contact Resistance: 20 milliohms&lt;/li&gt;
+&lt;li&gt;ROHS Compliant&lt;/li&gt;
+&lt;li&gt;SMD Pitch: 1mm&lt;/li&gt;
+&lt;li&gt;Small pad size: .6mm x 1.55mm&lt;/li&gt;
+&lt;li&gt;Large pad size: 1.2mm x 2.0mm&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<text x="0" y="4.445" size="0.6096" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="2.54" size="0.6096" layer="27" font="vector">&gt;VALUE</text>
+<smd name="1" x="-1.5" y="0.775" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-0.5" y="0.775" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="0.5" y="0.775" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="1.5" y="0.775" dx="0.6" dy="1.55" layer="1"/>
+<smd name="NC1" x="-2.8" y="3.2" dx="1.2" dy="2" layer="1"/>
+<smd name="NC2" x="2.8" y="3.2" dx="1.2" dy="2" layer="1"/>
+<wire x1="1.905" y1="3.937" x2="-1.905" y2="3.937" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="1.397" x2="-3.175" y2="0.635" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="0.635" x2="-2.413" y2="0.635" width="0.254" layer="21"/>
+<wire x1="3.175" y1="1.397" x2="3.175" y2="0.635" width="0.254" layer="21"/>
+<wire x1="3.175" y1="0.635" x2="2.413" y2="0.635" width="0.254" layer="21"/>
+<wire x1="-3" y1="3.5" x2="-3.3" y2="3.5" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="3.5" x2="-3.3" y2="3" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="3" x2="-3" y2="3" width="0.1" layer="51"/>
+<wire x1="3" y1="3" x2="3.3" y2="3" width="0.1" layer="51"/>
+<wire x1="3.3" y1="3" x2="3.3" y2="3.5" width="0.1" layer="51"/>
+<wire x1="3.3" y1="3.5" x2="3" y2="3.5" width="0.1" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -28963,10 +28855,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-AO3404A" value="5.8A/30V/35mΩ"/>
 <part name="GND43" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R19" library="SparkFun-Resistors" deviceset="10OHM" device="-0402-1/16W-5%" value="10Ω"/>
 <part name="R21" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="R22" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="R23" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
+<part name="R23" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="D7" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT60A" value="3A/10V/280mV"/>
 </parts>
 <sheets>
 <sheet>
@@ -28977,7 +28869,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v02</text>
 <text x="363.22" y="10.16" size="2.54" layer="94" font="vector" align="center">Elias Santistevan</text>
 <text x="187.96" y="71.12" size="2.54" layer="94" font="vector" align="center">Buttons and LEDs</text>
-<text x="167.64" y="266.7" size="1.778" layer="97" font="vector" align="center">VIN: 3.8 - 5.5V
+<text x="167.64" y="264.16" size="1.778" layer="97" font="vector" align="center">VIN: 3.8 - 6V
 Iout: 2A Max</text>
 <text x="383.54" y="88.9" size="1.778" layer="97" font="vector" align="center">Cut I2C jumper to remove pullups.</text>
 <text x="185.42" y="66.04" size="1.778" layer="97" font="vector" align="center">Cut respective jumper to sever power to LED.</text>
@@ -29012,7 +28904,7 @@ respective USB Shield from Ground. </text>
 <text x="327.66" y="147.32" size="1.778" layer="97" font="vector" align="center">3.3V (VCCA) -&gt; 3.3V - 5V (VCCB)</text>
 <wire x1="330.2" y1="101.6" x2="228.6" y2="101.6" width="0.2032" layer="97" style="longdash"/>
 <text x="261.62" y="91.44" size="2.54" layer="94" font="vector" align="center">IOREF Selection </text>
-<text x="261.62" y="86.36" size="1.778" layer="97" font="vector" align="center">USE IF THERE IS NO
+<text x="261.62" y="86.36" size="1.778" layer="97" font="vector" align="center">USE ONLY IF THERE IS NO
 IOREF ON YOUR BASE BOARD</text>
 <text x="66.04" y="71.12" size="2.54" layer="94" font="vector" align="center">USB Multiplexer - FSUSB30</text>
 <text x="281.94" y="269.24" size="1.778" layer="97" font="vector" align="center">Use "UART" USB-C for general operation. </text>
@@ -29021,7 +28913,9 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="391.16" y1="279.4" x2="391.16" y2="160.02" width="0.2032" layer="97" style="longdash"/>
 <text x="406.4" y="271.78" size="2.54" layer="94" font="vector" align="center">Switches</text>
 <text x="360.68" y="274.32" size="2.54" layer="94" font="vector" align="center">Power Control</text>
-<text x="358.14" y="264.16" size="1.778" layer="97" font="vector" align="center">Bi-Directional Power Switch</text>
+<text x="360.68" y="264.16" size="1.778" layer="97" font="vector" align="center">Bi-Directional Power Switch</text>
+<text x="167.64" y="269.24" size="1.778" layer="97" font="vector" align="center">VIN R3: 7-15V</text>
+<text x="381" y="233.68" size="1.778" layer="91" font="vector" align="center">0 Ohm ok?</text>
 </plain>
 <instances>
 <instance part="J4" gate="G$1" x="398.78" y="66.04" smashed="yes">
@@ -29513,19 +29407,19 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="IO4" gate="G$1" x="182.88" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="187.96" y="17.272" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
 </instance>
-<instance part="S4" gate="G$1" x="406.4" y="238.76" smashed="yes">
-<attribute name="NAME" x="406.4" y="246.634" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="406.4" y="228.346" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="S4" gate="G$1" x="406.4" y="233.68" smashed="yes">
+<attribute name="NAME" x="406.4" y="241.554" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="406.4" y="223.266" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R18" gate="G$1" x="414.02" y="223.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="412.496" y="223.52" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="415.544" y="223.52" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R18" gate="G$1" x="414.02" y="218.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="412.496" y="218.44" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="415.544" y="218.44" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="GND42" gate="1" x="414.02" y="213.36" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="414.02" y="213.106" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
+<instance part="GND42" gate="1" x="414.02" y="208.28" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="414.02" y="208.026" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="SUPPLY34" gate="G$1" x="416.56" y="246.38" smashed="yes">
-<attribute name="VALUE" x="416.56" y="249.174" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY34" gate="G$1" x="416.56" y="241.3" smashed="yes">
+<attribute name="VALUE" x="416.56" y="244.094" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY38" gate="G$1" x="350.52" y="180.34" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="350.52" y="183.134" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
@@ -29555,20 +29449,16 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="SUPPLY2" gate="G$1" x="375.92" y="256.54" smashed="yes">
 <attribute name="VALUE" x="375.92" y="259.334" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="Q4" gate="NMOS" x="363.22" y="215.9" smashed="yes" rot="MR0">
-<attribute name="NAME" x="357.378" y="218.186" size="1.778" layer="95" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="358.14" y="215.9" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="Q4" gate="NMOS" x="363.22" y="228.6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="357.378" y="230.886" size="1.778" layer="95" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="358.14" y="228.6" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="GND43" gate="1" x="360.68" y="205.74" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="360.68" y="205.486" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
+<instance part="GND43" gate="1" x="360.68" y="218.44" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="360.68" y="218.186" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R19" gate="G$1" x="360.68" y="228.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="362.204" y="228.6" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="359.156" y="228.6" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
-</instance>
-<instance part="R21" gate="G$1" x="375.92" y="213.36" smashed="yes">
-<attribute name="NAME" x="375.92" y="214.884" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="375.92" y="211.836" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R21" gate="G$1" x="375.92" y="226.06" smashed="yes">
+<attribute name="NAME" x="375.92" y="227.584" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="375.92" y="224.536" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="R22" gate="G$1" x="375.92" y="193.04" smashed="yes">
 <attribute name="NAME" x="375.92" y="194.564" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -29577,6 +29467,10 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="R23" gate="G$1" x="360.68" y="246.38" smashed="yes" rot="R270">
 <attribute name="NAME" x="362.204" y="246.38" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="359.156" y="246.38" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+</instance>
+<instance part="D7" gate="G$1" x="360.68" y="177.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="363.22" y="177.292" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="362.966" y="181.356" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -29925,7 +29819,7 @@ IOREF ON YOUR BASE BOARD</text>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="GND42" gate="1" pin="GND"/>
-<wire x1="414.02" y1="215.9" x2="414.02" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="210.82" x2="414.02" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="416.56" y1="167.64" x2="416.56" y2="170.18" width="0.1524" layer="91"/>
@@ -29935,7 +29829,7 @@ IOREF ON YOUR BASE BOARD</text>
 <segment>
 <pinref part="GND43" gate="1" pin="GND"/>
 <pinref part="Q4" gate="NMOS" pin="S"/>
-<wire x1="360.68" y1="208.28" x2="360.68" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="220.98" x2="360.68" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -30077,10 +29971,10 @@ IOREF ON YOUR BASE BOARD</text>
 </segment>
 <segment>
 <pinref part="SUPPLY38" gate="G$1" pin="3.3V"/>
-<pinref part="Q3" gate="G$1" pin="D"/>
-<wire x1="350.52" y1="180.34" x2="350.52" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="177.8" x2="360.68" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="177.8" x2="360.68" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="180.34" x2="350.52" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="172.72" x2="360.68" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="360.68" y1="172.72" x2="360.68" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -30447,9 +30341,9 @@ IOREF ON YOUR BASE BOARD</text>
 </segment>
 <segment>
 <pinref part="S4" gate="G$1" pin="1"/>
-<wire x1="411.48" y1="238.76" x2="416.56" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="233.68" x2="416.56" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="SUPPLY34" gate="G$1" pin="VIN"/>
-<wire x1="416.56" y1="246.38" x2="416.56" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="241.3" x2="416.56" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -31060,13 +30954,13 @@ IOREF ON YOUR BASE BOARD</text>
 <net name="OFF_XB" class="0">
 <segment>
 <pinref part="S4" gate="G$1" pin="6"/>
-<wire x1="414.02" y1="236.22" x2="414.02" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="231.14" x2="414.02" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="236.22" x2="414.02" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="231.14" x2="414.02" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="226.06" x2="414.02" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="231.14" x2="414.02" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="S4" gate="G$1" pin="4"/>
-<wire x1="411.48" y1="231.14" x2="414.02" y2="231.14" width="0.1524" layer="91"/>
-<junction x="414.02" y="231.14"/>
+<wire x1="411.48" y1="226.06" x2="414.02" y2="226.06" width="0.1524" layer="91"/>
+<junction x="414.02" y="226.06"/>
 </segment>
 </net>
 <net name="3V3_R3" class="0">
@@ -31109,22 +31003,21 @@ IOREF ON YOUR BASE BOARD</text>
 <net name="N$9" class="0">
 <segment>
 <pinref part="S4" gate="G$1" pin="2"/>
-<wire x1="401.32" y1="241.3" x2="398.78" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="241.3" x2="398.78" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="236.22" x2="398.78" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="236.22" x2="398.78" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="S4" gate="G$1" pin="5"/>
-<wire x1="398.78" y1="233.68" x2="401.32" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="228.6" x2="401.32" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="381" y1="213.36" x2="398.78" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="213.36" x2="398.78" y2="233.68" width="0.1524" layer="91"/>
-<junction x="398.78" y="233.68"/>
+<wire x1="381" y1="226.06" x2="398.78" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="226.06" x2="398.78" y2="228.6" width="0.1524" layer="91"/>
+<junction x="398.78" y="228.6"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="N$18" class="0">
 <segment>
+<pinref part="Q4" gate="NMOS" pin="D"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="360.68" y1="233.68" x2="360.68" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="236.22" x2="355.6" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="236.22" x2="355.6" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="2"/>
@@ -31134,20 +31027,14 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="360.68" y1="238.76" x2="365.76" y2="238.76" width="0.1524" layer="91"/>
 <junction x="360.68" y="238.76"/>
 <wire x1="365.76" y1="238.76" x2="365.76" y2="246.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R19" gate="G$1" pin="2"/>
-<pinref part="Q4" gate="NMOS" pin="D"/>
-<wire x1="360.68" y1="220.98" x2="360.68" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="233.68" x2="360.68" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="Q4" gate="NMOS" pin="G"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="368.3" y1="213.36" x2="370.84" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="226.06" x2="370.84" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_R3" class="0">
@@ -31166,10 +31053,10 @@ IOREF ON YOUR BASE BOARD</text>
 </segment>
 <segment>
 <pinref part="S4" gate="G$1" pin="3"/>
-<wire x1="411.48" y1="243.84" x2="419.1" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="419.1" y1="246.38" x2="421.64" y2="246.38" width="0.1524" layer="91"/>
-<label x="421.64" y="246.38" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="419.1" y1="243.84" x2="419.1" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="238.76" x2="419.1" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="241.3" x2="421.64" y2="241.3" width="0.1524" layer="91"/>
+<label x="421.64" y="241.3" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="419.1" y1="238.76" x2="419.1" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -31212,6 +31099,13 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="360.68" y1="254" x2="363.22" y2="254" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="251.46" x2="360.68" y2="254" width="0.1524" layer="91"/>
 <junction x="360.68" y="254"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<wire x1="360.68" y1="180.34" x2="360.68" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
