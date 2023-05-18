@@ -28681,6 +28681,108 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="DP3T">
+<packages>
+<package name="SWITCH_DP3T_SMD_JWING">
+<description>&lt;h3&gt;J-WING - DP3T&lt;/h3&gt;
+&lt;p&gt;Mechanical Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pad Size: 1.2mm x 1.6mm&lt;/li&gt;
+&lt;li&gt;Pin count:8&lt;/li&gt;
+&lt;li&gt;Pin pitch: 2mm (Smaller) and 4mm (Larger)&lt;/li&gt;
+&lt;li&gt;Package Size: 3.5mm x 12mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.nidec-components.com/e/catalog/switch/cl-sb.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-6" y1="-1.7" x2="6" y2="-1.7" width="0.25" layer="51"/>
+<wire x1="6" y1="-1.7" x2="6" y2="1.8" width="0.25" layer="51"/>
+<wire x1="6" y1="1.8" x2="-6" y2="1.8" width="0.25" layer="51"/>
+<wire x1="-6" y1="1.8" x2="-6" y2="-1.7" width="0.25" layer="51"/>
+<wire x1="-6" y1="2.2" x2="6" y2="2.2" width="0.25" layer="39"/>
+<wire x1="6" y1="2.2" x2="6" y2="-2.2" width="0.25" layer="39"/>
+<wire x1="6" y1="-2.2" x2="-6" y2="-2.2" width="0.25" layer="39"/>
+<wire x1="-6" y1="-2.2" x2="-6" y2="2.2" width="0.25" layer="39"/>
+<smd name="P1" x="-4" y="-1.4" dx="1.2" dy="1.6" layer="1"/>
+<smd name="P2" x="-2" y="-1.4" dx="1.2" dy="1.6" layer="1"/>
+<smd name="P3" x="2" y="-1.4" dx="1.2" dy="1.6" layer="1"/>
+<smd name="P4" x="4" y="-1.4" dx="1.2" dy="1.6" layer="1"/>
+<smd name="P8" x="4" y="1.4" dx="1.2" dy="1.6" layer="1"/>
+<smd name="P7" x="2" y="1.4" dx="1.2" dy="1.6" layer="1"/>
+<smd name="P6" x="-2" y="1.4" dx="1.2" dy="1.6" layer="1"/>
+<smd name="P5" x="-4" y="1.4" dx="1.2" dy="1.6" layer="1"/>
+<rectangle x1="-2.5" y1="-0.75" x2="2.5" y2="0.75" layer="51"/>
+<text x="0" y="2.794" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;NAME</text>
+<text x="0" y="-2.794" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;VALUE</text>
+<wire x1="-6.0198" y1="-1.651" x2="-6.0198" y2="1.778" width="0.254" layer="21"/>
+<wire x1="6.0198" y1="-1.651" x2="6.0198" y2="1.778" width="0.254" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SWITCH-DP3T">
+<description>&lt;h3&gt;Double-Pole, Triple-Throw (DP3T) Switch&lt;/h3&gt;</description>
+<wire x1="1.778" y1="2.54" x2="-2.032" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-5.08" x2="1.778" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="6.35" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-8.89" width="0.254" layer="94"/>
+<circle x="-2.54" y="2.54" radius="0.3592" width="0.254" layer="94"/>
+<circle x="2.54" y="5.08" radius="0.3592" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.3592" width="0.254" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0.254" layer="94"/>
+<circle x="2.54" y="-7.62" radius="0.3592" width="0.254" layer="94"/>
+<circle x="-2.54" y="-5.08" radius="0.3592" width="0.254" layer="94"/>
+<text x="0" y="7.874" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-10.414" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<circle x="2.54" y="-5.08" radius="0.3592" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0.254" layer="94"/>
+<wire x1="0" y1="-4.572" x2="0" y2="2.032" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="-0.762" x2="2.54" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-6.35" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+<pin name="3" x="-5.08" y="2.54" visible="off" length="short"/>
+<pin name="7" x="-5.08" y="-5.08" visible="off" length="short"/>
+<pin name="4" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="2" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="1" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="8" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="6" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
+<pin name="5" x="5.08" y="-7.62" visible="off" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SWITCH_DP3T" prefix="S">
+<description>&lt;h3&gt;Nidec Components - DP3T J-WING Switch &lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Characteristics&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;12V, 200mA DC Rating&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ON-ON-ON&lt;/li&gt;
+&lt;li&gt;BBM&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SWITCH-DP3T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SWITCH_DP3T_SMD_JWING">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+<connect gate="G$1" pin="3" pad="P3"/>
+<connect gate="G$1" pin="4" pad="P4"/>
+<connect gate="G$1" pin="5" pad="P5"/>
+<connect gate="G$1" pin="6" pad="P6"/>
+<connect gate="G$1" pin="7" pad="P7"/>
+<connect gate="G$1" pin="8" pad="P8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -28841,24 +28943,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R10" library="SparkFun-Resistors" deviceset="330OHM" device="-0603-1/10W-1%" value="330"/>
 <part name="GND41" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="IO4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
-<part name="S4" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
-<part name="R18" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="GND42" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY34" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY38" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="S5" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2307L" value="3.1A/30V/105mΩ"/>
-<part name="R20" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="GND44" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-AO3404A" value="5.8A/30V/35mΩ"/>
 <part name="GND43" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R21" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="R22" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="R23" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="D7" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT60A" value="3A/10V/280mV"/>
+<part name="S4" library="DP3T" deviceset="SWITCH_DP3T" device=""/>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28915,7 +29013,6 @@ IOREF ON YOUR BASE BOARD</text>
 <text x="360.68" y="274.32" size="2.54" layer="94" font="vector" align="center">Power Control</text>
 <text x="360.68" y="264.16" size="1.778" layer="97" font="vector" align="center">Bi-Directional Power Switch</text>
 <text x="167.64" y="269.24" size="1.778" layer="97" font="vector" align="center">VIN R3: 7-15V</text>
-<text x="381" y="233.68" size="1.778" layer="91" font="vector" align="center">0 Ohm ok?</text>
 </plain>
 <instances>
 <instance part="J4" gate="G$1" x="398.78" y="66.04" smashed="yes">
@@ -29407,19 +29504,8 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="IO4" gate="G$1" x="182.88" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="187.96" y="17.272" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
 </instance>
-<instance part="S4" gate="G$1" x="406.4" y="233.68" smashed="yes">
-<attribute name="NAME" x="406.4" y="241.554" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="406.4" y="223.266" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="R18" gate="G$1" x="414.02" y="218.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="412.496" y="218.44" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="415.544" y="218.44" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="GND42" gate="1" x="414.02" y="208.28" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="414.02" y="208.026" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
-</instance>
-<instance part="SUPPLY34" gate="G$1" x="416.56" y="241.3" smashed="yes">
-<attribute name="VALUE" x="416.56" y="244.094" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="GND42" gate="1" x="421.64" y="208.28" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="421.64" y="208.026" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
 <instance part="SUPPLY38" gate="G$1" x="350.52" y="180.34" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="350.52" y="183.134" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
@@ -29431,10 +29517,6 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="Q3" gate="G$1" x="363.22" y="190.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="358.14" y="190.5" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="358.14" y="187.96" size="1.778" layer="96" font="vector" rot="R180"/>
-</instance>
-<instance part="R20" gate="G$1" x="416.56" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="415.036" y="175.26" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="418.084" y="175.26" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="GND44" gate="1" x="416.56" y="165.1" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="416.56" y="164.846" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
@@ -29456,14 +29538,6 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="GND43" gate="1" x="360.68" y="218.44" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="360.68" y="218.186" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="R21" gate="G$1" x="375.92" y="226.06" smashed="yes">
-<attribute name="NAME" x="375.92" y="227.584" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="375.92" y="224.536" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="R22" gate="G$1" x="375.92" y="193.04" smashed="yes">
-<attribute name="NAME" x="375.92" y="194.564" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="375.92" y="191.516" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
 <instance part="R23" gate="G$1" x="360.68" y="246.38" smashed="yes" rot="R270">
 <attribute name="NAME" x="362.204" y="246.38" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="359.156" y="246.38" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
@@ -29471,6 +29545,13 @@ IOREF ON YOUR BASE BOARD</text>
 <instance part="D7" gate="G$1" x="360.68" y="177.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="363.22" y="177.292" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="362.966" y="181.356" size="1.778" layer="96" font="vector" align="top-left"/>
+</instance>
+<instance part="S4" gate="G$1" x="406.4" y="233.68" smashed="yes">
+<attribute name="NAME" x="406.4" y="241.554" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="406.4" y="223.266" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="414.02" y="243.84" smashed="yes">
+<attribute name="VALUE" x="414.02" y="246.634" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -29817,14 +29898,24 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="182.88" y1="12.7" x2="182.88" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="GND42" gate="1" pin="GND"/>
-<wire x1="414.02" y1="210.82" x2="414.02" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="6"/>
+<wire x1="411.48" y1="228.6" x2="421.64" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="2"/>
+<wire x1="411.48" y1="236.22" x2="421.64" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="236.22" x2="421.64" y2="228.6" width="0.1524" layer="91"/>
+<junction x="421.64" y="228.6"/>
+<wire x1="421.64" y1="228.6" x2="421.64" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="416.56" y1="167.64" x2="416.56" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="GND44" gate="1" pin="GND"/>
+<wire x1="414.02" y1="190.5" x2="416.56" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="190.5" x2="416.56" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="182.88" x2="416.56" y2="182.88" width="0.1524" layer="91"/>
+<junction x="416.56" y="182.88"/>
+<pinref part="S5" gate="G$1" pin="1"/>
+<pinref part="S5" gate="G$1" pin="4"/>
+<wire x1="416.56" y1="182.88" x2="416.56" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND43" gate="1" pin="GND"/>
@@ -30340,10 +30431,14 @@ IOREF ON YOUR BASE BOARD</text>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
-<pinref part="S4" gate="G$1" pin="1"/>
-<wire x1="411.48" y1="233.68" x2="416.56" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="SUPPLY34" gate="G$1" pin="VIN"/>
-<wire x1="416.56" y1="241.3" x2="416.56" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="8"/>
+<wire x1="411.48" y1="231.14" x2="414.02" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="231.14" x2="414.02" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="4"/>
+<wire x1="414.02" y1="238.76" x2="414.02" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="238.76" x2="414.02" y2="238.76" width="0.1524" layer="91"/>
+<junction x="414.02" y="238.76"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -30388,11 +30483,6 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="129.54" y1="208.28" x2="127" y2="208.28" width="0.1524" layer="91"/>
 <junction x="129.54" y="208.28"/>
 <label x="127" y="208.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U7" gate="G$1" pin="A8"/>
-<wire x1="365.76" y1="124.46" x2="370.84" y2="124.46" width="0.1524" layer="91"/>
-<label x="365.76" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -30951,18 +31041,6 @@ IOREF ON YOUR BASE BOARD</text>
 <wire x1="182.88" y1="22.86" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="OFF_XB" class="0">
-<segment>
-<pinref part="S4" gate="G$1" pin="6"/>
-<wire x1="414.02" y1="231.14" x2="414.02" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="226.06" x2="414.02" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="231.14" x2="414.02" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<pinref part="S4" gate="G$1" pin="4"/>
-<wire x1="411.48" y1="226.06" x2="414.02" y2="226.06" width="0.1524" layer="91"/>
-<junction x="414.02" y="226.06"/>
-</segment>
-</net>
 <net name="3V3_R3" class="0">
 <segment>
 <wire x1="414.02" y1="187.96" x2="419.1" y2="187.96" width="0.1524" layer="91"/>
@@ -30988,32 +31066,7 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="132.08" y="142.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="OFF_3V3" class="0">
-<segment>
-<wire x1="414.02" y1="190.5" x2="416.56" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="190.5" x2="416.56" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="182.88" x2="416.56" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="182.88" x2="416.56" y2="182.88" width="0.1524" layer="91"/>
-<junction x="416.56" y="182.88"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-<pinref part="S5" gate="G$1" pin="1"/>
-<pinref part="S5" gate="G$1" pin="4"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="S4" gate="G$1" pin="2"/>
-<wire x1="401.32" y1="236.22" x2="398.78" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="236.22" x2="398.78" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="S4" gate="G$1" pin="5"/>
-<wire x1="398.78" y1="228.6" x2="401.32" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="381" y1="226.06" x2="398.78" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="226.06" x2="398.78" y2="228.6" width="0.1524" layer="91"/>
-<junction x="398.78" y="228.6"/>
-</segment>
-</net>
-<net name="N$18" class="0">
+<net name="GATE" class="0">
 <segment>
 <pinref part="Q4" gate="NMOS" pin="D"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
@@ -31033,8 +31086,14 @@ IOREF ON YOUR BASE BOARD</text>
 <net name="N$22" class="0">
 <segment>
 <pinref part="Q4" gate="NMOS" pin="G"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="368.3" y1="226.06" x2="370.84" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="236.22" x2="398.78" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="226.06" x2="398.78" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="226.06" x2="398.78" y2="228.6" width="0.1524" layer="91"/>
+<junction x="398.78" y="228.6"/>
+<pinref part="S4" gate="G$1" pin="7"/>
+<wire x1="401.32" y1="228.6" x2="398.78" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="3"/>
+<wire x1="398.78" y1="236.22" x2="401.32" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_R3" class="0">
@@ -31052,53 +31111,34 @@ IOREF ON YOUR BASE BOARD</text>
 <label x="142.24" y="142.24" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S4" gate="G$1" pin="3"/>
-<wire x1="411.48" y1="238.76" x2="419.1" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="419.1" y1="241.3" x2="421.64" y2="241.3" width="0.1524" layer="91"/>
-<label x="421.64" y="241.3" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="419.1" y1="238.76" x2="419.1" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="S5" gate="G$1" pin="5"/>
-<pinref part="R22" gate="G$1" pin="2"/>
-<pinref part="S5" gate="G$1" pin="2"/>
-<wire x1="401.32" y1="185.42" x2="403.86" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="381" y1="193.04" x2="401.32" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="401.32" y1="193.04" x2="403.86" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="401.32" y1="185.42" x2="401.32" y2="193.04" width="0.1524" layer="91"/>
-<junction x="401.32" y="193.04"/>
+<pinref part="S4" gate="G$1" pin="5"/>
+<wire x1="411.48" y1="226.06" x2="419.1" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="226.06" x2="419.1" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="1"/>
+<wire x1="419.1" y1="233.68" x2="419.1" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="243.84" x2="421.64" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="233.68" x2="419.1" y2="233.68" width="0.1524" layer="91"/>
+<junction x="419.1" y="233.68"/>
+<label x="421.64" y="243.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="G"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="370.84" y1="193.04" x2="368.3" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="S5" gate="G$1" pin="5"/>
+<pinref part="S5" gate="G$1" pin="2"/>
+<wire x1="401.32" y1="185.42" x2="403.86" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="193.04" x2="401.32" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="193.04" x2="403.86" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="185.42" x2="401.32" y2="193.04" width="0.1524" layer="91"/>
+<junction x="401.32" y="193.04"/>
 </segment>
 </net>
 <net name="EN_TRANS" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="B8"/>
-<wire x1="396.24" y1="124.46" x2="401.32" y2="124.46" width="0.1524" layer="91"/>
-<label x="401.32" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
 <pinref part="B1" gate="G$1" pin="*D9"/>
 <wire x1="172.72" y1="109.22" x2="170.18" y2="109.22" width="0.1524" layer="91"/>
 <label x="172.72" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="SOURCE" class="0">
-<segment>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="358.14" y1="254" x2="360.68" y2="254" width="0.1524" layer="91"/>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="360.68" y1="254" x2="363.22" y2="254" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="251.46" x2="360.68" y2="254" width="0.1524" layer="91"/>
-<junction x="360.68" y="254"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -31106,6 +31146,17 @@ IOREF ON YOUR BASE BOARD</text>
 <pinref part="D7" gate="G$1" pin="A"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="360.68" y1="180.34" x2="360.68" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SOURCE" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="360.68" y1="254" x2="363.22" y2="254" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="360.68" y1="251.46" x2="360.68" y2="254" width="0.1524" layer="91"/>
+<junction x="360.68" y="254"/>
+<wire x1="360.68" y1="254" x2="358.14" y2="254" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
