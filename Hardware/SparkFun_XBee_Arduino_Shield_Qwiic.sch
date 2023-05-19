@@ -28229,7 +28229,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2307L" value="3.1A/30V/105mΩ"/>
 <part name="GND44" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D7" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-B340A" value="3A/40V/500mV"/>
-<part name="VIN_EN" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
+<part name="X1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="D9" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-B340A" value="3A/40V/500mV"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
@@ -28296,7 +28296,7 @@ respective USB Shield from Ground. </text>
 <text x="139.7" y="119.38" size="2.54" layer="94" font="vector" align="center">3v3 Power Switch</text>
 <wire x1="96.52" y1="124.46" x2="180.34" y2="124.46" width="0.2032" layer="97" style="longdash"/>
 <text x="139.7" y="147.32" size="1.778" layer="97" font="vector" align="center">WARNING:
-Connects VIN between
+X1 Jumper connects VIN between
 SHIELD and BOARD</text>
 <wire x1="330.2" y1="215.9" x2="431.8" y2="215.9" width="0.2032" layer="97" style="longdash"/>
 </plain>
@@ -28728,7 +28728,7 @@ SHIELD and BOARD</text>
 <attribute name="NAME" x="129.032" y="88.392" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="129.54" y="86.868" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="VIN_EN" gate="G$1" x="137.16" y="134.62" smashed="yes">
+<instance part="X1" gate="G$1" x="137.16" y="134.62" smashed="yes">
 <attribute name="NAME" x="137.16" y="137.414" size="1.778" layer="95" font="vector" align="center"/>
 </instance>
 <instance part="D9" gate="G$1" x="147.32" y="134.62" smashed="yes">
@@ -29870,7 +29870,7 @@ SHIELD and BOARD</text>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="VIN_EN" gate="G$1" pin="1"/>
+<pinref part="X1" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="134.62" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
@@ -29942,7 +29942,7 @@ SHIELD and BOARD</text>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="VIN_EN" gate="G$1" pin="2"/>
+<pinref part="X1" gate="G$1" pin="2"/>
 <pinref part="D9" gate="G$1" pin="A"/>
 <wire x1="142.24" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
 </segment>
