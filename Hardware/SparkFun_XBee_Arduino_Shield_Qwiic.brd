@@ -19345,10 +19345,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="46.67" y1="18.78" x2="46.67" y2="20" width="0.254" layer="1"/>
 <wire x1="47.0408" y1="20.3708" x2="48.9712" y2="20.3708" width="0.254" layer="1"/>
 <wire x1="48.9712" y1="20.3708" x2="49.4792" y2="20.8788" width="0.254" layer="1"/>
-<wire x1="49.4792" y1="23.5768" x2="48.926" y2="24.13" width="0.254" layer="1"/>
-<wire x1="48.926" y1="24.13" x2="48.545" y2="24.13" width="0.254" layer="1"/>
+<wire x1="49.4792" y1="23.4244" x2="48.7736" y2="24.13" width="0.254" layer="1"/>
+<wire x1="48.7736" y1="24.13" x2="48.545" y2="24.13" width="0.254" layer="1"/>
 <wire x1="46.67" y1="20" x2="47.0408" y2="20.3708" width="0.254" layer="1"/>
-<wire x1="49.4792" y1="20.8788" x2="49.4792" y2="23.5768" width="0.254" layer="1"/>
+<wire x1="49.4792" y1="20.8788" x2="49.4792" y2="23.4244" width="0.254" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="Q3" pad="3"/>
