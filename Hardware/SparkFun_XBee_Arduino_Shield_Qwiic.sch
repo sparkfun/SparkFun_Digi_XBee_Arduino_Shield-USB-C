@@ -28246,17 +28246,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="48.26" y="266.7" size="1.778" layer="97" font="vector" align="center">VCC Range: 3.3V - 4.3V</text>
+<text x="50.8" y="264.16" size="1.778" layer="97" font="vector" align="center">VCC Range: 2.7V - 5.5V 
+Check Datasheet for your specific module.</text>
 <text x="167.894" y="274.066" size="2.54" layer="94" font="vector" align="center">Buck Converter - AP63203</text>
 <text x="378.46" y="208.28" size="2.54" layer="94" font="vector" align="center">Qwiic - I2C</text>
-<text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v03</text>
+<text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v10</text>
 <text x="363.22" y="10.16" size="2.54" layer="94" font="vector" align="center">Elias Santistevan</text>
 <text x="231.14" y="63.5" size="2.54" layer="94" font="vector" align="center">Buttons and LEDs</text>
 <text x="167.64" y="264.16" size="1.778" layer="97" font="vector" align="center">VIN: 3.8 - 6V
 Iout: 2A Max</text>
 <text x="378.46" y="203.2" size="1.778" layer="97" font="vector" align="center">Cut I2C jumper to remove pullups.</text>
 <text x="228.6" y="58.42" size="1.778" layer="97" font="vector" align="center">Cut respective jumper to sever power to LED.</text>
-<text x="50.8" y="271.78" size="2.54" layer="94" font="vector" align="center">RF Module - XBee 3 Cat 1 Smart Modem</text>
+<text x="50.8" y="271.78" size="2.54" layer="94" font="vector" align="center">RF Module - XBee Module</text>
 <text x="378.46" y="269.24" size="2.54" layer="94" font="vector" align="center">0.1" Headers</text>
 <text x="241.046" y="208.788" size="1.778" layer="97" font="vector">Cut SHLD/SHLD1 jumper to disconnect
 respective USB Shield from Ground. </text>
@@ -28279,7 +28280,7 @@ respective USB Shield from Ground. </text>
 <text x="66.04" y="63.5" size="2.54" layer="94" font="vector" align="center">USB Multiplexer - FSUSB30</text>
 <text x="281.94" y="269.24" size="1.778" layer="97" font="vector" align="center">Use "UART" USB-C for general operation. </text>
 <text x="281.94" y="266.7" size="1.778" layer="97" font="vector" align="center">Use "Direct USB" USB-C for Cellular Firmware Updates</text>
-<text x="139.7" y="154.94" size="2.54" layer="94" font="vector" align="center">Power Jumper </text>
+<text x="127" y="154.94" size="2.54" layer="94" font="vector" align="center">Power Jumper </text>
 <text x="167.64" y="269.24" size="1.778" layer="97" font="vector" align="center">VIN R3: 7-15V</text>
 <wire x1="78.74" y1="124.46" x2="78.74" y2="160.02" width="0.2032" layer="97" style="longdash"/>
 <wire x1="236.22" y1="68.58" x2="330.2" y2="68.58" width="0.2032" layer="97" style="longdash"/>
@@ -28295,18 +28296,18 @@ respective USB Shield from Ground. </text>
 <text x="208.28" y="152.4" size="2.54" layer="94" font="vector" align="center">Enable Pin Translation</text>
 <text x="129.54" y="119.38" size="2.54" layer="94" font="vector" align="center">3v3 Power Switch</text>
 <wire x1="78.74" y1="124.46" x2="180.34" y2="124.46" width="0.2032" layer="97" style="longdash"/>
-<text x="139.7" y="147.32" size="1.778" layer="97" font="vector" align="center">WARNING:
+<text x="127" y="147.32" size="1.778" layer="97" font="vector" align="center">WARNING:
 X1 Jumper connects VIN between
 SHIELD and BOARD</text>
 <wire x1="330.2" y1="215.9" x2="431.8" y2="215.9" width="0.2032" layer="97" style="longdash"/>
-<text x="129.54" y="111.76" size="1.778" layer="97" font="vector" align="center">Flip switch to "ON" 
-position to enable Shield to be 
+<text x="129.54" y="111.76" size="1.778" layer="97" font="vector" align="center">Flip the switch to the "ON" 
+position to allow the XBee Shield to be 
 powered from R3 Board. </text>
-<text x="81.28" y="91.44" size="1.778" layer="97" font="vector">Note: XBee 3 modules consume
-large amounts of power. In this
-case, you should be powering
-the Shield from the onboard USB-C
-connector. </text>
+<text x="81.28" y="71.12" size="1.778" layer="97" font="vector">Note: Some XBee 3 modules, namely
+those with GNSS and LTE capabilites,
+consume more power than is possible
+to be provided through this switch. 
+Use the onboard USB-C connector in this case.</text>
 <text x="4.318" y="51.308" size="1.778" layer="97" font="vector">Pulled HIGH enables "Direct USB"
 Pulled LOW enables "I2C"</text>
 </plain>
@@ -28738,18 +28739,18 @@ Pulled LOW enables "I2C"</text>
 <attribute name="NAME" x="141.732" y="80.772" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="142.24" y="79.248" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="X1" gate="G$1" x="137.16" y="134.62" smashed="yes">
-<attribute name="NAME" x="137.16" y="137.414" size="1.778" layer="95" font="vector" align="center"/>
+<instance part="X1" gate="G$1" x="124.46" y="134.62" smashed="yes">
+<attribute name="NAME" x="124.46" y="137.414" size="1.778" layer="95" font="vector" align="center"/>
 </instance>
-<instance part="D9" gate="G$1" x="147.32" y="134.62" smashed="yes">
-<attribute name="NAME" x="149.86" y="131.826" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="149.86" y="127.508" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<instance part="D9" gate="G$1" x="134.62" y="134.62" smashed="yes">
+<attribute name="NAME" x="137.16" y="131.826" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="137.16" y="127.508" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="129.54" y="137.16" smashed="yes">
-<attribute name="VALUE" x="129.54" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY2" gate="G$1" x="116.84" y="137.16" smashed="yes">
+<attribute name="VALUE" x="116.84" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="152.4" y="137.16" smashed="yes">
-<attribute name="VALUE" x="152.4" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY5" gate="G$1" x="139.7" y="137.16" smashed="yes">
+<attribute name="VALUE" x="139.7" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY21" gate="G$1" x="269.24" y="142.24" smashed="yes">
 <attribute name="VALUE" x="269.24" y="145.034" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -29504,9 +29505,9 @@ Pulled LOW enables "I2C"</text>
 </segment>
 <segment>
 <pinref part="D9" gate="G$1" pin="C"/>
-<wire x1="152.4" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="134.62" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
-<wire x1="152.4" y1="134.62" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="134.62" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -29881,8 +29882,8 @@ Pulled LOW enables "I2C"</text>
 <net name="VCC" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="134.62" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="134.62" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="134.62" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
@@ -29954,7 +29955,7 @@ Pulled LOW enables "I2C"</text>
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
 <pinref part="D9" gate="G$1" pin="A"/>
-<wire x1="142.24" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="134.62" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
