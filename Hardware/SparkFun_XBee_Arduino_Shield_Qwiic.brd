@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.002" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="23" fill="1" visible="yes" active="yes"/>
@@ -34,9 +34,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -84,10 +84,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="117" name="PM_Ref" color="26" fill="1" visible="no" active="yes"/>
+<layer number="117" name="PM_Ref" color="26" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
-<layer number="119" name="PF_Ref" color="31" fill="1" visible="no" active="yes"/>
-<layer number="120" name="WFL_Ref" color="25" fill="1" visible="no" active="yes"/>
+<layer number="119" name="PF_Ref" color="31" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="WFL_Ref" color="25" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -216,10 +216,10 @@
 <dimension x1="21.59" y1="49.53" x2="0" y2="49.53" x3="10.795" y3="67.31" textsize="1.778" layer="47" unit="inch"/>
 <dimension x1="34.29" y1="49.53" x2="0" y2="49.53" x3="17.145" y3="71.12" textsize="1.778" layer="47" unit="inch"/>
 <text x="-21.59" y="-6.35" size="1.778" layer="47" font="vector">Units in Inches</text>
-<text x="42.369" y="43.381" size="1.778" layer="1" font="vector" ratio="15">1</text>
-<text x="42.877" y="43.381" size="1.778" layer="2" font="vector" ratio="15">2</text>
-<text x="43.512" y="43.381" size="1.778" layer="15" font="vector" ratio="15">3</text>
-<text x="45.036" y="43.381" size="1.778" layer="16" font="vector" ratio="15" rot="SMR0">4</text>
+<text x="46.56" y="48.207" size="1.778" layer="1" font="vector" ratio="15">1</text>
+<text x="47.068" y="48.207" size="1.778" layer="2" font="vector" ratio="15">2</text>
+<text x="47.703" y="48.207" size="1.778" layer="15" font="vector" ratio="15">3</text>
+<text x="49.227" y="48.207" size="1.778" layer="16" font="vector" ratio="15" rot="SMR0">4</text>
 <text x="59.69" y="44.45" size="1.778" layer="51" font="vector" ratio="15">Four Layer Board</text>
 <text x="59.69" y="26.67" size="1.778" layer="51" font="vector" ratio="15">1.6mm Thickness</text>
 <text x="59.69" y="30.48" size="1.778" layer="51" font="vector" ratio="15">Lead Free HASL</text>
@@ -17514,12 +17514,12 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="24.3586" y="21.4122" extent="1-16" drill="0.3048"/>
 <via x="20.6248" y="22.8854" extent="1-16" drill="0.3048"/>
 <via x="20.193" y="49.022" extent="1-16" drill="0.3048"/>
-<via x="39.243" y="44.45" extent="1-16" drill="0.3048"/>
+<via x="36.195" y="43.18" extent="1-16" drill="0.3048"/>
 <via x="37.3634" y="36.0934" extent="1-16" drill="0.3048"/>
 <via x="38.8366" y="33.1978" extent="1-16" drill="0.3048"/>
 <via x="8.128" y="37.592" extent="1-16" drill="0.3048"/>
 <via x="27.94" y="46.355" extent="1-16" drill="0.3048"/>
-<via x="52.578" y="38.481" extent="1-16" drill="0.3048"/>
+<via x="50.8" y="39.37" extent="1-16" drill="0.3048"/>
 <via x="23.114" y="47.625" extent="1-16" drill="0.3048"/>
 <via x="17.272" y="33.528" extent="1-16" drill="0.3048"/>
 <via x="14.6958" y="32.1156" extent="1-16" drill="0.3048"/>
@@ -17527,7 +17527,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="7.3914" y="17.78" extent="1-16" drill="0.3048"/>
 <via x="15.621" y="14.732" extent="1-16" drill="0.3048"/>
 <via x="14.605" y="48.133" extent="1-16" drill="0.3048"/>
-<via x="35.9918" y="32.1056" extent="1-16" drill="0.3048"/>
+<via x="36.1188" y="32.4866" extent="1-16" drill="0.3048"/>
 <via x="39.9542" y="10.6426" extent="1-16" drill="0.3048"/>
 <via x="36.1442" y="49.8602" extent="1-16" drill="0.3048"/>
 <via x="30.6832" y="7.1374" extent="1-16" drill="0.3048"/>
@@ -17563,7 +17563,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="25.8572" y="25.908" extent="1-16" drill="0.3048"/>
 <via x="30.3784" y="30.3276" extent="1-16" drill="0.3048"/>
 <via x="32.766" y="47.117" extent="1-16" drill="0.3048"/>
-<via x="36.6776" y="46.5582" extent="1-16" drill="0.3048"/>
+<via x="36.1696" y="45.9232" extent="1-16" drill="0.3048"/>
 <via x="35.3314" y="21.5392" extent="1-16" drill="0.3048"/>
 <contactref element="S5" pad="1"/>
 <contactref element="S5" pad="4"/>
@@ -17581,6 +17581,11 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="0.8636" y="49.1236" extent="1-16" drill="0.3048"/>
 <via x="0.8636" y="42.7736" extent="1-16" drill="0.3048"/>
 <via x="0.8636" y="36.4236" extent="1-16" drill="0.3048"/>
+<via x="52.578" y="47.752" extent="1-16" drill="0.3048"/>
+<via x="27.94" y="41.91" extent="1-16" drill="0.3048"/>
+<via x="27.94" y="33.02" extent="1-16" drill="0.3048"/>
+<via x="48.6664" y="27.9908" extent="1-16" drill="0.3048"/>
+<via x="48.6664" y="19.1008" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="3.3V">
 <contactref element="I2C_PU" pad="2"/>
@@ -18558,7 +18563,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <approved hash="19,16,52932ad319510293"/>
 <approved hash="19,16,bad7aaf71af71ad7"/>
 <approved hash="19,16,f6a5cecdbecda6a5"/>
-<approved hash="23,1,f477fe0b39c6e4b9"/>
 </errors>
 </board>
 </drawing>
