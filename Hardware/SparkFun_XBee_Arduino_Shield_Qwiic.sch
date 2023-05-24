@@ -1249,26 +1249,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="AXIAL-0.3EZ">
-<description>This is the "EZ" version of the standard .3" spaced resistor package.&lt;br&gt;
-It has a reduced top mask to make it harder to install upside-down.</description>
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.8796" stop="no"/>
-<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.8796" stop="no"/>
-<text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-<circle x="-3.81" y="0" radius="0.508" width="0" layer="29"/>
-<circle x="3.81" y="0" radius="0.523634375" width="0" layer="29"/>
-<circle x="-3.81" y="0" radius="1.02390625" width="0" layer="30"/>
-<circle x="3.81" y="0" radius="1.04726875" width="0" layer="30"/>
-</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1602,87 +1582,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technology name="">
 <attribute name="PROD_ID" value="RES-13495" constant="no"/>
 <attribute name="VALUE" value="100k" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="100OHM" prefix="R">
-<description>&lt;h3&gt;100Ω resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12181" constant="no"/>
-<attribute name="VALUE" value="100" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3EZ">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12181" constant="no"/>
-<attribute name="VALUE" value="100" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT-1/4W-1%" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12181"/>
-<attribute name="VALUE" value="100"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT_KIT-1/4W-1%" package="AXIAL-0.1-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12181" constant="no"/>
-<attribute name="VALUE" value="100" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-07863"/>
-<attribute name="VALUE" value="100"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402-TIGHT-1/16W-1%" package="0402-TIGHT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-14962" constant="no"/>
-<attribute name="VALUE" value="100" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -27990,6 +27889,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="MSOP10">
+<description>&lt;h3&gt;MSOP10&lt;/h3&gt;
+&lt;p&gt;Mechanical Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pad Size:1.4mm x .3mm&lt;/li&gt;
+&lt;li&gt;Pin count: 10&lt;/li&gt;
+&lt;li&gt;Pin pitch: .5mm&lt;/li&gt;
+&lt;li&gt;Package Size: 3mm x 3mm &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://rocelec.widen.net/view/pdf/a7amyaouts/FAIR-S-A0001171768-1.pdf?t.download=true&amp;u=5oefqw”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.2032" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
@@ -28040,7 +27948,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <symbols>
-<symbol name="FSUSB30MUX">
+<symbol name="FSUSB42MUX">
 <wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
@@ -28053,34 +27961,40 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="D1+" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
 <pin name="D+" x="-10.16" y="2.54" visible="pin" length="short"/>
 <pin name="D-" x="-10.16" y="0" visible="pin" length="short"/>
-<pin name="S" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="SEL" x="-10.16" y="-2.54" visible="pin" length="short"/>
 <pin name="VCC" x="-10.16" y="7.62" visible="pin" length="short"/>
-<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="10.795" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FSUSB30MUX" prefix="U">
+<deviceset name="FSUSB42MUX" prefix="U">
+<description>&lt;h3&gt;Fairchild FSUSB42MUX&lt;/h3&gt;
+&lt;p&gt;he FSUSB42 is a bi-directional, low-power, two-port,
+high-speed, USB2.0 switch. Configured as a double-
+pole, double-throw switch (DPDT) switch, it is optimized
+for switching between any combination of high-speed
+(480 Mbps) or Full-Speed (12 Mbps) sources.&lt;/p&gt;</description>
 <gates>
-<gate name="U1" symbol="FSUSB30MUX" x="0" y="0"/>
+<gate name="G$1" symbol="FSUSB42MUX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_MSOP10" package="MSOP10">
+<device name="" package="MSOP10">
 <connects>
-<connect gate="U1" pin="!OE!" pad="9"/>
-<connect gate="U1" pin="D+" pad="4"/>
-<connect gate="U1" pin="D-" pad="6"/>
-<connect gate="U1" pin="D1+" pad="2"/>
-<connect gate="U1" pin="D1-" pad="8"/>
-<connect gate="U1" pin="D2+" pad="3"/>
-<connect gate="U1" pin="D2-" pad="7"/>
-<connect gate="U1" pin="GND" pad="5"/>
-<connect gate="U1" pin="S" pad="1"/>
-<connect gate="U1" pin="VCC" pad="10"/>
+<connect gate="G$1" pin="!OE!" pad="10"/>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="4"/>
+<connect gate="G$1" pin="D1+" pad="7"/>
+<connect gate="G$1" pin="D1-" pad="6"/>
+<connect gate="G$1" pin="D2+" pad="9"/>
+<connect gate="G$1" pin="D2-" pad="8"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="SEL" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-15569" constant="no"/>
+<attribute name="PROD_ID" value="IC-18702" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -28174,7 +28088,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="B1" library="SparkFun-Boards" deviceset="ARDUINO_UNO_R3_SHIELD" device="NOLABELS"/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U1" library="SparkFun-IC-Special-Function" deviceset="FSUSB30MUX" device="_MSOP10"/>
 <part name="GND29" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="S3" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
@@ -28207,7 +28120,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C5" library="SparkFun-Capacitors" deviceset="47PF" device="-0603-50V-5%" value="47pF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="10PF" device="-0603-50V-5%" value="10pF"/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="100OHM" device="-0603-1/10W-1%" value="100"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="4.7UF" device="-0603-6.3V-(10%)" value="4.7uF"/>
@@ -28242,6 +28154,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-BSS138" value="220mA/50V/3.5Ω"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY27" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="U1" library="SparkFun-IC-Special-Function" deviceset="FSUSB42MUX" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28548,15 +28461,11 @@ Pulled LOW enables "I2C"</text>
 <instance part="GND5" gate="1" x="269.24" y="88.9" smashed="yes">
 <attribute name="VALUE" x="269.24" y="88.646" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="U1" gate="U1" x="83.82" y="22.86" smashed="yes">
-<attribute name="NAME" x="76.2" y="33.655" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="76.2" y="10.16" size="1.778" layer="96" font="vector"/>
-</instance>
 <instance part="GND29" gate="1" x="71.12" y="10.16" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="71.12" y="9.906" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="SUPPLY12" gate="G$1" x="71.12" y="45.72" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="71.12" y="48.514" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
+<instance part="SUPPLY12" gate="G$1" x="71.12" y="33.02" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="71.12" y="35.814" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="S3" gate="G$1" x="25.4" y="20.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="25.4" y="12.446" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
@@ -28661,10 +28570,6 @@ Pulled LOW enables "I2C"</text>
 <instance part="C13" gate="G$1" x="121.92" y="25.4" smashed="yes">
 <attribute name="NAME" x="123.444" y="28.321" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="123.444" y="23.241" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="R4" gate="G$1" x="71.12" y="38.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="69.596" y="38.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="72.644" y="38.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="GND9" gate="1" x="121.92" y="17.78" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="121.92" y="17.526" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
@@ -28781,6 +28686,10 @@ Pulled LOW enables "I2C"</text>
 <instance part="SUPPLY27" gate="G$1" x="203.2" y="124.46" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="203.2" y="127.254" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
+<instance part="U1" gate="G$1" x="83.82" y="22.86" smashed="yes">
+<attribute name="NAME" x="76.2" y="33.655" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="76.2" y="10.16" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28802,9 +28711,9 @@ Pulled LOW enables "I2C"</text>
 <pinref part="J6" gate="J1" pin="7"/>
 </segment>
 <segment>
-<pinref part="U1" gate="U1" pin="D1+"/>
 <wire x1="96.52" y1="27.94" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
 <label x="96.52" y="27.94" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="D1+"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="SDA"/>
@@ -28984,14 +28893,14 @@ Pulled LOW enables "I2C"</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U1" gate="U1" pin="GND"/>
 <wire x1="71.12" y1="12.7" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="15.24" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<pinref part="U1" gate="U1" pin="!OE!"/>
 <wire x1="73.66" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="17.78" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
 <junction x="71.12" y="15.24"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="!OE!"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="22.86" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
@@ -29179,9 +29088,10 @@ Pulled LOW enables "I2C"</text>
 <pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
-<wire x1="71.12" y1="43.18" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="71.12" y1="30.48" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q7" gate="G2" pin="E"/>
@@ -29651,9 +29561,9 @@ Pulled LOW enables "I2C"</text>
 </net>
 <net name="XBEE_D+/SDA" class="2">
 <segment>
-<pinref part="U1" gate="U1" pin="D+"/>
 <wire x1="71.12" y1="25.4" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
 <label x="71.12" y="25.4" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="D+"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="228.6" x2="20.32" y2="228.6" width="0.1524" layer="91"/>
@@ -29663,9 +29573,9 @@ Pulled LOW enables "I2C"</text>
 </net>
 <net name="XBEE_D-" class="2">
 <segment>
-<pinref part="U1" gate="U1" pin="D-"/>
 <wire x1="71.12" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
 <label x="71.12" y="22.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="D-"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="D-"/>
@@ -29675,9 +29585,9 @@ Pulled LOW enables "I2C"</text>
 </net>
 <net name="DIRECT_D+" class="2">
 <segment>
-<pinref part="U1" gate="U1" pin="D2+"/>
 <wire x1="96.52" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
 <label x="96.52" y="20.32" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="D2+"/>
 </segment>
 <segment>
 <pinref part="DIRECT_USB" gate="J1" pin="D+"/>
@@ -29691,9 +29601,9 @@ Pulled LOW enables "I2C"</text>
 </net>
 <net name="DIRECT_D-" class="2">
 <segment>
-<pinref part="U1" gate="U1" pin="D2-"/>
 <wire x1="96.52" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
 <label x="96.52" y="17.78" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="D2-"/>
 </segment>
 <segment>
 <pinref part="DIRECT_USB" gate="J1" pin="D-"/>
@@ -29707,9 +29617,9 @@ Pulled LOW enables "I2C"</text>
 </net>
 <net name="DIRECT_SELECT" class="0">
 <segment>
-<pinref part="U1" gate="U1" pin="S"/>
 <wire x1="73.66" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
 <label x="71.12" y="20.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="SEL"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="25.4" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
@@ -29776,14 +29686,6 @@ Pulled LOW enables "I2C"</text>
 <wire x1="152.4" y1="254" x2="152.4" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="251.46" x2="157.48" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="G$1" pin="V_USB_2"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U1" gate="U1" pin="VCC"/>
-<wire x1="71.12" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="30.48" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
