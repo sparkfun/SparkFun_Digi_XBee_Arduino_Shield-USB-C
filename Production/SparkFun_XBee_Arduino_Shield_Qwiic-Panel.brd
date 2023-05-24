@@ -18455,7 +18455,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$12" library="top" package="##CTS##28" value="" x="36.83" y="29.21" smashed="yes"/>
 <element name="U$41" library="topmirror" package="#GND#0" value="" x="48.1076" y="34.2392" smashed="yes"/>
 <element name="U$44" library="top" package="#3V3#1" value="" x="45.72" y="19.939" smashed="yes"/>
-<element name="U$69" library="pot" package="OFF311" value="" x="41.783" y="22.9108" smashed="yes"/>
+<element name="U$69" library="pot" package="OFF311" value="" x="41.783" y="25.4508" smashed="yes"/>
 <element name="U$52" library="top" package="#PLED#20" value="" x="45.5168" y="2.9972" smashed="yes" rot="MR0"/>
 <element name="U$93" library="pot" package="#IOLED#5" value="" x="47.0662" y="10.0584" smashed="yes" rot="MR0"/>
 <element name="U$94" library="pot" package="IO49" value="" x="50.8254" y="11.3538" smashed="yes"/>
@@ -18488,7 +18488,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$34" library="bot" package="#D9#6" value="" x="4.6228" y="20.2692" smashed="yes"/>
 <element name="U$42" library="bot" package="#D0#3" value="" x="4.6736" y="22.8092" smashed="yes"/>
 <element name="U$43" library="bot" package="#X1#10" value="" x="43.18" y="30.6832" smashed="yes" rot="R90"/>
-<element name="U$46" library="bot" package="ON38" value="" x="42.2148" y="25.4" smashed="yes"/>
+<element name="U$46" library="bot" package="ON38" value="" x="42.2148" y="22.86" smashed="yes"/>
 <element name="U$53" library="topmirror" package="#GND#0" value="" x="48.1584" y="34.2392" smashed="yes" rot="MR0"/>
 <element name="U$63" library="topmirror" package="#GND#0" value="" x="48.133" y="31.7246" smashed="yes" rot="MR0"/>
 <element name="U$66" library="topmirror" package="#5V#5" value="" x="48.641" y="29.21" smashed="yes" rot="MR0"/>
@@ -18880,7 +18880,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$160" library="top" package="##CTS##28" value="" x="90.678" y="29.21" smashed="yes"/>
 <element name="U$161" library="topmirror" package="#GND#0" value="" x="101.9556" y="34.2392" smashed="yes"/>
 <element name="U$162" library="top" package="#3V3#1" value="" x="99.568" y="19.939" smashed="yes"/>
-<element name="U$163" library="pot" package="OFF311" value="" x="95.631" y="22.9108" smashed="yes"/>
+<element name="U$163" library="pot" package="OFF311" value="" x="95.631" y="25.4508" smashed="yes"/>
 <element name="U$164" library="top" package="#PLED#20" value="" x="99.3648" y="2.9972" smashed="yes" rot="MR0"/>
 <element name="U$165" library="pot" package="#IOLED#5" value="" x="100.9142" y="10.0584" smashed="yes" rot="MR0"/>
 <element name="U$166" library="pot" package="IO49" value="" x="104.6734" y="11.3538" smashed="yes"/>
@@ -18913,7 +18913,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$169" library="bot" package="#D9#6" value="" x="58.4708" y="20.2692" smashed="yes"/>
 <element name="U$170" library="bot" package="#D0#3" value="" x="58.5216" y="22.8092" smashed="yes"/>
 <element name="U$171" library="bot" package="#X1#10" value="" x="97.028" y="30.6832" smashed="yes" rot="R90"/>
-<element name="U$172" library="bot" package="ON38" value="" x="96.0628" y="25.4" smashed="yes"/>
+<element name="U$172" library="bot" package="ON38" value="" x="96.0628" y="22.86" smashed="yes"/>
 <element name="U$173" library="topmirror" package="#GND#0" value="" x="102.0064" y="34.2392" smashed="yes" rot="MR0"/>
 <element name="U$174" library="topmirror" package="#GND#0" value="" x="101.981" y="31.7246" smashed="yes" rot="MR0"/>
 <element name="U$175" library="topmirror" package="#5V#5" value="" x="102.489" y="29.21" smashed="yes" rot="MR0"/>
@@ -19305,7 +19305,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$252" library="top" package="##CTS##28" value="" x="36.83" y="91.948" smashed="yes"/>
 <element name="U$253" library="topmirror" package="#GND#0" value="" x="48.1076" y="96.9772" smashed="yes"/>
 <element name="U$254" library="top" package="#3V3#1" value="" x="45.72" y="82.677" smashed="yes"/>
-<element name="U$255" library="pot" package="OFF311" value="" x="41.783" y="85.6488" smashed="yes"/>
+<element name="U$255" library="pot" package="OFF311" value="" x="41.783" y="88.1888" smashed="yes"/>
 <element name="U$256" library="top" package="#PLED#20" value="" x="45.5168" y="65.7352" smashed="yes" rot="MR0"/>
 <element name="U$257" library="pot" package="#IOLED#5" value="" x="47.0662" y="72.7964" smashed="yes" rot="MR0"/>
 <element name="U$258" library="pot" package="IO49" value="" x="50.8254" y="74.0918" smashed="yes"/>
@@ -19338,7 +19338,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$261" library="bot" package="#D9#6" value="" x="4.6228" y="83.0072" smashed="yes"/>
 <element name="U$262" library="bot" package="#D0#3" value="" x="4.6736" y="85.5472" smashed="yes"/>
 <element name="U$263" library="bot" package="#X1#10" value="" x="43.18" y="93.4212" smashed="yes" rot="R90"/>
-<element name="U$264" library="bot" package="ON38" value="" x="42.2148" y="88.138" smashed="yes"/>
+<element name="U$264" library="bot" package="ON38" value="" x="42.2148" y="85.598" smashed="yes"/>
 <element name="U$265" library="topmirror" package="#GND#0" value="" x="48.1584" y="96.9772" smashed="yes" rot="MR0"/>
 <element name="U$266" library="topmirror" package="#GND#0" value="" x="48.133" y="94.4626" smashed="yes" rot="MR0"/>
 <element name="U$267" library="topmirror" package="#5V#5" value="" x="48.641" y="91.948" smashed="yes" rot="MR0"/>
@@ -19730,7 +19730,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$344" library="top" package="##CTS##28" value="" x="90.678" y="91.948" smashed="yes"/>
 <element name="U$345" library="topmirror" package="#GND#0" value="" x="101.9556" y="96.9772" smashed="yes"/>
 <element name="U$346" library="top" package="#3V3#1" value="" x="99.568" y="82.677" smashed="yes"/>
-<element name="U$347" library="pot" package="OFF311" value="" x="95.631" y="85.6488" smashed="yes"/>
+<element name="U$347" library="pot" package="OFF311" value="" x="95.631" y="88.1888" smashed="yes"/>
 <element name="U$348" library="top" package="#PLED#20" value="" x="99.3648" y="65.7352" smashed="yes" rot="MR0"/>
 <element name="U$349" library="pot" package="#IOLED#5" value="" x="100.9142" y="72.7964" smashed="yes" rot="MR0"/>
 <element name="U$350" library="pot" package="IO49" value="" x="104.6734" y="74.0918" smashed="yes"/>
@@ -19763,7 +19763,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$353" library="bot" package="#D9#6" value="" x="58.4708" y="83.0072" smashed="yes"/>
 <element name="U$354" library="bot" package="#D0#3" value="" x="58.5216" y="85.5472" smashed="yes"/>
 <element name="U$355" library="bot" package="#X1#10" value="" x="97.028" y="93.4212" smashed="yes" rot="R90"/>
-<element name="U$356" library="bot" package="ON38" value="" x="96.0628" y="88.138" smashed="yes"/>
+<element name="U$356" library="bot" package="ON38" value="" x="96.0628" y="85.598" smashed="yes"/>
 <element name="U$357" library="topmirror" package="#GND#0" value="" x="102.0064" y="96.9772" smashed="yes" rot="MR0"/>
 <element name="U$358" library="topmirror" package="#GND#0" value="" x="101.981" y="94.4626" smashed="yes" rot="MR0"/>
 <element name="U$359" library="topmirror" package="#5V#5" value="" x="102.489" y="91.948" smashed="yes" rot="MR0"/>
@@ -20155,7 +20155,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$436" library="top" package="##CTS##28" value="" x="36.83" y="154.686" smashed="yes"/>
 <element name="U$437" library="topmirror" package="#GND#0" value="" x="48.1076" y="159.7152" smashed="yes"/>
 <element name="U$438" library="top" package="#3V3#1" value="" x="45.72" y="145.415" smashed="yes"/>
-<element name="U$439" library="pot" package="OFF311" value="" x="41.783" y="148.3868" smashed="yes"/>
+<element name="U$439" library="pot" package="OFF311" value="" x="41.783" y="150.9268" smashed="yes"/>
 <element name="U$440" library="top" package="#PLED#20" value="" x="45.5168" y="128.4732" smashed="yes" rot="MR0"/>
 <element name="U$441" library="pot" package="#IOLED#5" value="" x="47.0662" y="135.5344" smashed="yes" rot="MR0"/>
 <element name="U$442" library="pot" package="IO49" value="" x="50.8254" y="136.8298" smashed="yes"/>
@@ -20188,7 +20188,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$445" library="bot" package="#D9#6" value="" x="4.6228" y="145.7452" smashed="yes"/>
 <element name="U$446" library="bot" package="#D0#3" value="" x="4.6736" y="148.2852" smashed="yes"/>
 <element name="U$447" library="bot" package="#X1#10" value="" x="43.18" y="156.1592" smashed="yes" rot="R90"/>
-<element name="U$448" library="bot" package="ON38" value="" x="42.2148" y="150.876" smashed="yes"/>
+<element name="U$448" library="bot" package="ON38" value="" x="42.2148" y="148.336" smashed="yes"/>
 <element name="U$449" library="topmirror" package="#GND#0" value="" x="48.1584" y="159.7152" smashed="yes" rot="MR0"/>
 <element name="U$450" library="topmirror" package="#GND#0" value="" x="48.133" y="157.2006" smashed="yes" rot="MR0"/>
 <element name="U$451" library="topmirror" package="#5V#5" value="" x="48.641" y="154.686" smashed="yes" rot="MR0"/>
@@ -20580,7 +20580,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$528" library="top" package="##CTS##28" value="" x="90.678" y="154.686" smashed="yes"/>
 <element name="U$529" library="topmirror" package="#GND#0" value="" x="101.9556" y="159.7152" smashed="yes"/>
 <element name="U$530" library="top" package="#3V3#1" value="" x="99.568" y="145.415" smashed="yes"/>
-<element name="U$531" library="pot" package="OFF311" value="" x="95.631" y="148.3868" smashed="yes"/>
+<element name="U$531" library="pot" package="OFF311" value="" x="95.631" y="150.9268" smashed="yes"/>
 <element name="U$532" library="top" package="#PLED#20" value="" x="99.3648" y="128.4732" smashed="yes" rot="MR0"/>
 <element name="U$533" library="pot" package="#IOLED#5" value="" x="100.9142" y="135.5344" smashed="yes" rot="MR0"/>
 <element name="U$534" library="pot" package="IO49" value="" x="104.6734" y="136.8298" smashed="yes"/>
@@ -20613,7 +20613,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$537" library="bot" package="#D9#6" value="" x="58.4708" y="145.7452" smashed="yes"/>
 <element name="U$538" library="bot" package="#D0#3" value="" x="58.5216" y="148.2852" smashed="yes"/>
 <element name="U$539" library="bot" package="#X1#10" value="" x="97.028" y="156.1592" smashed="yes" rot="R90"/>
-<element name="U$540" library="bot" package="ON38" value="" x="96.0628" y="150.876" smashed="yes"/>
+<element name="U$540" library="bot" package="ON38" value="" x="96.0628" y="148.336" smashed="yes"/>
 <element name="U$541" library="topmirror" package="#GND#0" value="" x="102.0064" y="159.7152" smashed="yes" rot="MR0"/>
 <element name="U$542" library="topmirror" package="#GND#0" value="" x="101.981" y="157.2006" smashed="yes" rot="MR0"/>
 <element name="U$543" library="topmirror" package="#5V#5" value="" x="102.489" y="154.686" smashed="yes" rot="MR0"/>

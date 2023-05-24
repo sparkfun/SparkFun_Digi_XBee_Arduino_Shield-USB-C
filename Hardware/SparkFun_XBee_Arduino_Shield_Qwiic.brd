@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.002" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="23" fill="1" visible="yes" active="yes"/>
@@ -24,7 +24,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -42,7 +42,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
@@ -236,6 +236,9 @@ JLC0416H-7628 Stackup</text>
 <dimension x1="50.8" y1="41.91" x2="50.8" y2="54.61" x3="69.85" y3="48.26" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="50.8" y1="19.05" x2="50.8" y2="36.83" x3="60.96" y3="27.94" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="15.24" y1="59.69" x2="11.43" y2="57.15" x3="-3.81" y3="58.42" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<text x="78.74" y="22.86" size="1.778" layer="51" font="vector" ratio="15">Red Soldermask</text>
+<text x="78.74" y="19.05" size="1.778" layer="51" font="vector" ratio="15">White Silk</text>
+<text x="78.74" y="15.24" size="1.778" layer="51" font="vector" ratio="15">Material: FR4: TG135-140</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -18165,7 +18168,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$12" library="top" package="##CTS##28" value="" x="36.83" y="29.21" smashed="yes"/>
 <element name="U$41" library="topmirror" package="#GND#0" value="" x="48.1076" y="34.2392" smashed="yes"/>
 <element name="U$44" library="top" package="#3V3#1" value="" x="45.72" y="19.939" smashed="yes"/>
-<element name="U$69" library="pot" package="OFF311" value="" x="41.783" y="22.9108" smashed="yes"/>
+<element name="U$69" library="pot" package="OFF311" value="" x="41.783" y="25.4508" smashed="yes"/>
 <element name="U$52" library="top" package="#PLED#20" value="" x="45.5168" y="2.9972" smashed="yes" rot="MR0"/>
 <element name="U$93" library="pot" package="#IOLED#5" value="" x="47.0662" y="10.0584" smashed="yes" rot="MR0"/>
 <element name="U$94" library="pot" package="IO49" value="" x="50.8254" y="11.3538" smashed="yes"/>
@@ -18198,7 +18201,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$34" library="bot" package="#D9#6" value="" x="4.6228" y="20.2692" smashed="yes"/>
 <element name="U$42" library="bot" package="#D0#3" value="" x="4.6736" y="22.8092" smashed="yes"/>
 <element name="U$43" library="bot" package="#X1#10" value="" x="43.18" y="30.6832" smashed="yes" rot="R90"/>
-<element name="U$46" library="bot" package="ON38" value="" x="42.2148" y="25.4" smashed="yes"/>
+<element name="U$46" library="bot" package="ON38" value="" x="42.2148" y="22.86" smashed="yes"/>
 <element name="U$53" library="topmirror" package="#GND#0" value="" x="48.1584" y="34.2392" smashed="yes" rot="MR0"/>
 <element name="U$63" library="topmirror" package="#GND#0" value="" x="48.133" y="31.7246" smashed="yes" rot="MR0"/>
 <element name="U$66" library="topmirror" package="#5V#5" value="" x="48.641" y="29.21" smashed="yes" rot="MR0"/>
