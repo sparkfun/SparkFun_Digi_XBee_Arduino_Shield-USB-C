@@ -23768,15 +23768,15 @@ An SMD 1mm pitch JST connector makes it easy and quick (get it? Qwiic?) to conne
 
 We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a&gt;, &lt;a href=”https://www.sparkfun.com/products/14205”&gt;100mm&lt;/a&gt;, &lt;a href=”https://www.sparkfun.com/products/14206”&gt;50mm&lt;/a&gt;, and &lt;a href=”https://www.sparkfun.com/products/14207”&gt;breadboard friendly&lt;/a&gt; Qwiic cables. We also offer &lt;a href=”https://www.sparkfun.com/products/14323”&gt;10 pcs strips&lt;/a&gt; the SMD connectors.</description>
 <gates>
-<gate name="G$1" symbol="I2C_STANDARD" x="0" y="0"/>
+<gate name="J1" symbol="I2C_STANDARD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="JS-1MM" package="JST04_1MM_RA">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
@@ -23787,10 +23787,10 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </device>
 <device name="SR" package="JST04_1MM_RA_STRESSRELIEF">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -23798,10 +23798,10 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </device>
 <device name="" package="JST04_1MM_VERT">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
@@ -27949,22 +27949,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </packages>
 <symbols>
 <symbol name="FSUSB42MUX">
-<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<description>&lt;h3&gt;FSUSB42&lt;/h3&gt;</description>
+<wire x1="-7.62" y1="-10.16" x2="0" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="0" y1="-10.16" x2="7.62" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="0" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="0" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
-<pin name="D2-" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="D2+" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="D2-" x="10.16" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="D2+" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="-10.16" y="-7.62" visible="pin" length="short"/>
 <pin name="!OE!" x="-10.16" y="-5.08" visible="pin" length="short"/>
-<pin name="D1-" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="D1+" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="D1-" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="D1+" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
 <pin name="D+" x="-10.16" y="2.54" visible="pin" length="short"/>
 <pin name="D-" x="-10.16" y="0" visible="pin" length="short"/>
 <pin name="SEL" x="-10.16" y="-2.54" visible="pin" length="short"/>
 <pin name="VCC" x="-10.16" y="7.62" visible="pin" length="short"/>
 <text x="-7.62" y="10.795" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-12.7" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<wire x1="0" y1="-10.16" x2="0" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="10.16" x2="0" y2="2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94" style="shortdash"/>
+<text x="1.016" y="3.048" size="0.762" layer="94" font="vector">SEL = 0</text>
+<text x="1.016" y="-3.81" size="0.762" layer="94" font="vector">SEL = 1</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -28225,7 +28236,7 @@ Use the onboard USB-C connector in this case.</text>
 Pulled LOW enables "I2C"</text>
 </plain>
 <instances>
-<instance part="J4" gate="G$1" x="393.7" y="180.34" smashed="yes">
+<instance part="J4" gate="J1" x="393.7" y="180.34" smashed="yes">
 <attribute name="VALUE" x="373.38" y="175.006" size="1.778" layer="96" font="vector" align="top-left"/>
 <attribute name="NAME" x="388.62" y="188.214" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -28696,7 +28707,7 @@ Pulled LOW enables "I2C"</text>
 <nets>
 <net name="D11/SDA" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="3"/>
+<pinref part="J4" gate="J1" pin="3"/>
 <wire x1="401.32" y1="182.88" x2="406.4" y2="182.88" width="0.1524" layer="91"/>
 <label x="406.4" y="182.88" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
@@ -28711,8 +28722,8 @@ Pulled LOW enables "I2C"</text>
 <pinref part="J6" gate="J1" pin="7"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="27.94" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
-<label x="96.52" y="27.94" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="96.52" y1="30.48" x2="93.98" y2="30.48" width="0.1524" layer="91"/>
+<label x="96.52" y="30.48" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="D1+"/>
 </segment>
 <segment>
@@ -28738,7 +28749,7 @@ Pulled LOW enables "I2C"</text>
 <label x="355.6" y="172.72" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="4"/>
+<pinref part="J4" gate="J1" pin="4"/>
 <wire x1="401.32" y1="185.42" x2="406.4" y2="185.42" width="0.1524" layer="91"/>
 <label x="406.4" y="185.42" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
@@ -28750,7 +28761,7 @@ Pulled LOW enables "I2C"</text>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="J4" gate="J1" pin="1"/>
 <wire x1="401.32" y1="177.8" x2="403.86" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="177.8" x2="403.86" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -29001,7 +29012,7 @@ Pulled LOW enables "I2C"</text>
 <wire x1="378.46" y1="180.34" x2="378.46" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="J4" gate="J1" pin="2"/>
 <wire x1="403.86" y1="180.34" x2="401.32" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
 <wire x1="403.86" y1="190.5" x2="403.86" y2="180.34" width="0.1524" layer="91"/>
@@ -29585,8 +29596,8 @@ Pulled LOW enables "I2C"</text>
 </net>
 <net name="DIRECT_D+" class="2">
 <segment>
-<wire x1="96.52" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
-<label x="96.52" y="20.32" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="96.52" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
+<label x="96.52" y="17.78" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="D2+"/>
 </segment>
 <segment>
@@ -29601,8 +29612,8 @@ Pulled LOW enables "I2C"</text>
 </net>
 <net name="DIRECT_D-" class="2">
 <segment>
-<wire x1="96.52" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
-<label x="96.52" y="17.78" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="96.52" y1="15.24" x2="93.98" y2="15.24" width="0.1524" layer="91"/>
+<label x="96.52" y="15.24" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="D2-"/>
 </segment>
 <segment>

@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
@@ -18237,7 +18237,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="21.5392" y1="24.2062" x2="23.368" y2="26.035" width="0.254" layer="1"/>
 <wire x1="23.368" y1="33.655" x2="23.368" y2="26.035" width="0.254" layer="1"/>
 <via x="21.5232" y="16.7038" extent="1-16" drill="0.3048"/>
-<wire x1="21.5232" y1="16.7038" x2="21.4898" y2="16.6704" width="0.254" layer="1"/>
 <wire x1="21.5232" y1="16.7038" x2="21.5392" y2="16.7198" width="0.254" layer="1"/>
 <wire x1="21.5392" y1="16.7198" x2="21.5392" y2="24.2062" width="0.254" layer="1"/>
 <contactref element="B1" pad="SDA"/>
@@ -18600,9 +18599,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="20.69265625" y1="16.78" x2="21.59" y2="15.88265625" width="0.254" layer="1"/>
 <wire x1="21.59" y1="14.82" x2="21.59" y2="15.88265625" width="0.254" layer="1"/>
 <wire x1="20.03" y1="16.78" x2="20.69265625" y2="16.78" width="0.254" layer="1"/>
-<wire x1="21.59" y1="14.82" x2="22.4654" y2="14.82" width="0.254" layer="1"/>
-<wire x1="22.4654" y1="14.82" x2="22.479" y2="14.8336" width="0.254" layer="1"/>
-<via x="22.479" y="14.8336" extent="1-16" drill="0.3048"/>
+<wire x1="21.59" y1="14.82" x2="22.4908" y2="14.82" width="0.254" layer="1"/>
+<wire x1="22.4908" y1="14.82" x2="22.5044" y2="14.8336" width="0.254" layer="1"/>
+<via x="22.5044" y="14.8336" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="N$11">
 <contactref element="I2C_PU" pad="3"/>
