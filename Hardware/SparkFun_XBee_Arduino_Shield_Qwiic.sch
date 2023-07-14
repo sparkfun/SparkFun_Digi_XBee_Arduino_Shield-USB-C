@@ -28175,7 +28175,7 @@ for switching between any combination of high-speed
 Check Datasheet for your specific module.</text>
 <text x="167.894" y="274.066" size="2.54" layer="94" font="vector" align="center">Buck Converter - AP63203</text>
 <text x="378.46" y="208.28" size="2.54" layer="94" font="vector" align="center">Qwiic - I2C</text>
-<text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v10</text>
+<text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v11</text>
 <text x="363.22" y="10.16" size="2.54" layer="94" font="vector" align="center">Elias Santistevan</text>
 <text x="231.14" y="63.5" size="2.54" layer="94" font="vector" align="center">Buttons and LEDs</text>
 <text x="167.64" y="264.16" size="1.778" layer="97" font="vector" align="center">VIN: 3.8 - 6V
