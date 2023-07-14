@@ -9,8 +9,8 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="23" fill="1" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="39" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="39" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="26" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -18667,7 +18667,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$85" library="topmirror" package="DEVELOPMENT1346" value="" x="27.94" y="55.88" smashed="yes"/>
 <element name="U$86" library="topmirror" package="BOARD1347" value="" x="38.1" y="55.88" smashed="yes"/>
 <element name="U$73" library="top" package="#I2C#13751" value="" x="13.4058" y="17.7892" smashed="yes"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="BLANK" value="SFE_LOGO_NAMEBLANK" x="85.09" y="30.48" smashed="yes"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="BLANK" value="SFE_LOGO_NAMEBLANK" x="0" y="0" smashed="yes"/>
 <element name="LOGO4" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="SPECIAL_INSTRUCTIONS-ORDERING" x="77.05" y="56.5" smashed="yes"/>
 <element name="Q5" library="SparkFun-DiscreteSemi" package="SOT23-3" value="20V/4.2A/52mΩ/1.4W" x="30.099" y="27.6606" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.75" y="27.6606" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
