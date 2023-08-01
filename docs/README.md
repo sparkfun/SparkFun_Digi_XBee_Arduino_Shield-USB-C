@@ -1,15 +1,37 @@
-docs directory
-====================
-This folder should contain the files for the product documentation
+SparkFun <PRODUCT NAME>
+========================================
 
-* [assets](/docs/assets/) - Folder containing all the assets for the hookup guide
-    * [board_files](/docs/assets/board_files/) - Asset files for the product design
-        * [Eagle design files](/docs/assets/board_files/eagle_files.zip) (.zip)
-        * [Schematic](/docs/assets/board_files/schematic.pdf) (.pdf)
-        * [Dimensions](/docs/assets/board_files/dimensions.pdf) (.pdf)
-        * [Graphical Datasheet](/docs/assets/board_files/graphical_datasheet.pdf) (.pdf)
-    * [component_documentation](/docs/assets/component_documentation/) - Datasheets, documentation, guides, manuals, etc. for hardware components
-    * [img](/docs/assets/img/) - Images for product documentation
-* [github](/docs/github/) - Folder containing files w/ information for GitHub issues and pull-requests
-* [javascript](/docs/javascript/) - Custom javascript files for including mathjax equations
-* [stylesheet](/docs/stylesheet/) - Custom stylesheet files for documentation
+[![SparkFun Part Name](URL for picture of part)](URL for product on Sparkfun.com)
+
+[*SparkFun Part Name (SKU)*](URL for product on Sparkfun.com)
+
+<Basic description of the part.>
+
+Repository Contents
+-------------------
+
+* **/Documents** - Data sheets, additional product information
+* **/Hardware** - Eagle design files (.brd, .sch)
+* **/Production** - Production panel files (.brd)
+* **/docs** - Files related to the hookup guide
+
+Documentation
+--------------
+* **[Library](GitHub library URL)** - <LANGUAGE> library for the <PRODUCT NAME>.
+* **[Hookup Guide](Learn.SparkFun URL)** - Basic hookup guide for the <PRODUCT NAME>.
+
+
+License Information
+-------------------
+
+This product is _**open source**_! 
+
+Please review the LICENSE.md file for license information. 
+
+If you have any questions or concerns on licensing, please contact technical support on our [SparkFun forums](https://forum.sparkfun.com/viewforum.php?f=152).
+
+Distributed as-is; no warranty is given.
+
+- Your friends at SparkFun.
+
+_<COLLABORATION CREDIT>_
