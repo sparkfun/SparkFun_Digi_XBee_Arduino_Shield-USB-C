@@ -1,9 +1,9 @@
-SparkFun <PRODUCT NAME>
+SparkFun XBee Development Arduino Shield (Qwiic)
 ========================================
 
-[![SparkFun Part Name](URL for picture of part)](URL for product on Sparkfun.com)
+[![SparkFun XBee Development Arduino Shield (Qwiic)](URL for picture of part)](https://www.sparkfun.com/products/22131)
 
-[*SparkFun Part Name (SKU)*](URL for product on Sparkfun.com)
+[*SparkFun XBee Development Arduino Shield (Qwiic) (22131)*](https://www.sparkfun.com/products/22131)
 
 <Basic description of the part.>
 
@@ -17,8 +17,7 @@ Repository Contents
 
 Documentation
 --------------
-* **[Library](GitHub library URL)** - <LANGUAGE> library for the <PRODUCT NAME>.
-* **[Hookup Guide](Learn.SparkFun URL)** - Basic hookup guide for the <PRODUCT NAME>.
+* **[Hookup Guide](http://docs.sparkfun.com/SparkFun_XBee3_Arduino_Shield)** - Basic hookup guide for the SparkFun XBee Development Arduino Shield (Qwiic).
 
 
 License Information
