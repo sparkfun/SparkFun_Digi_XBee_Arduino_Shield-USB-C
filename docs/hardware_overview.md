@@ -6,11 +6,6 @@ icon: material/cog
 
 ## Primary Component
 
-## Secondary Components(s)
-<!-- Secondary Components if necessary (UART converters, charge IC, etc.) -->
-
-## Connectors/Connections
-<!-- Qwiic connectors, USB, PTHs, Power, etc. -->
 
 ## LEDs
 
@@ -23,6 +18,30 @@ icon: material/cog
 		<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg" alt="Tutorial's thumbnail"><br>
         How to Work with Jumper Pads and PCB Traces</a>
 	</p>
+
+
+<center>
+<table class="pdf">
+	<tr>
+		<td align="center">
+			<a href="../img/22131-XBee_Dev_Arduino_Shield-I2CJumper.jpg"><img src="../img/22131-XBee_Dev_Arduino_Shield-I2CJumper.jpg" width="200"></a><br>
+			<i>I2C Jumper</i>
+		</td>
+	<tr>
+</table>
+</center>
+
+<div class="grid cards hide" markdown>
+
+-   <figure markdown>
+	[![](assets/img/22131-XBee_Dev_Arduino_Shield-I2CJumper.jpg)](assets/img/22131-XBee_Dev_Arduino_Shield-I2CJumper.jpg "Click to enlarge")
+	<figcaption markdown>
+	I2C Jumper
+	</figcaption>
+	</figure>
+
+</div>
+
 
 
 ## Board Dimensions
