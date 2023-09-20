@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -27595,7 +27595,7 @@ Shield form compatible with the Arduino Uno R3.
 Check Datasheet for your specific module.</text>
 <text x="167.894" y="274.066" size="2.54" layer="94" font="vector" align="center">Buck Converter - AP63203</text>
 <text x="378.46" y="208.28" size="2.54" layer="94" font="vector" align="center">Qwiic - I2C</text>
-<text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v11</text>
+<text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v12</text>
 <text x="363.22" y="10.16" size="2.54" layer="94" font="vector" align="center">Elias Santistevan</text>
 <text x="231.14" y="63.5" size="2.54" layer="94" font="vector" align="center">Buttons and LEDs</text>
 <text x="167.64" y="264.16" size="1.778" layer="97" font="vector" align="center">VIN: 3.8 - 6V
@@ -27614,8 +27614,7 @@ respective USB Shield from Ground. </text>
 <wire x1="228.6" y1="279.4" x2="228.6" y2="160.02" width="0.2032" layer="97" style="longdash"/>
 <text x="281.94" y="274.32" size="2.54" layer="94" font="vector" align="center">USB-C </text>
 <wire x1="330.2" y1="35.56" x2="330.2" y2="68.58" width="0.2032" layer="97" style="longdash"/>
-<wire x1="78.74" y1="68.58" x2="137.16" y2="68.58" width="0.2032" layer="97" style="longdash"/>
-<wire x1="137.16" y1="68.58" x2="180.34" y2="68.58" width="0.2032" layer="97" style="longdash"/>
+<wire x1="78.74" y1="68.58" x2="180.34" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <wire x1="180.34" y1="68.58" x2="236.22" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <wire x1="78.74" y1="68.58" x2="78.74" y2="124.46" width="0.2032" layer="97" style="longdash"/>
 <text x="287.02" y="154.94" size="2.54" layer="94" font="vector" align="center">R3 Footprint Plated Through Hole</text>
@@ -28001,9 +28000,9 @@ to your R3/4 Board. </text>
 <instance part="SUPPLY27" gate="G$1" x="203.2" y="127" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="203.2" y="129.794" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="S4" gate="G$1" x="58.42" y="139.7" smashed="yes">
-<attribute name="NAME" x="58.42" y="147.574" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="58.42" y="129.286" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="S4" gate="G$1" x="53.34" y="139.7" smashed="yes">
+<attribute name="NAME" x="53.34" y="147.574" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="53.34" y="129.286" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -28331,9 +28330,9 @@ to your R3/4 Board. </text>
 <pinref part="J6" gate="J1" pin="2"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="137.16" x2="63.5" y2="137.16" width="0.1524" layer="91"/>
-<label x="66.04" y="137.16" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
-<pinref part="S4" gate="G$1" pin="6"/>
+<wire x1="45.72" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
+<label x="45.72" y="142.24" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+<pinref part="S4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="D14/RXI" class="0">
@@ -28348,9 +28347,9 @@ to your R3/4 Board. </text>
 <pinref part="J6" gate="J1" pin="3"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="144.78" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
-<label x="66.04" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="S4" gate="G$1" pin="3"/>
+<wire x1="45.72" y1="134.62" x2="48.26" y2="134.62" width="0.1524" layer="91"/>
+<label x="45.72" y="134.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="S4" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="D12/SPI_POCI" class="0">
@@ -28867,9 +28866,9 @@ to your R3/4 Board. </text>
 <label x="299.72" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="134.62" x2="53.34" y2="134.62" width="0.1524" layer="91"/>
-<label x="50.8" y="134.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="S4" gate="G$1" pin="5"/>
+<wire x1="60.96" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
+<label x="60.96" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="S4" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="D14/RXI-R3" class="0">
@@ -28879,9 +28878,33 @@ to your R3/4 Board. </text>
 <label x="299.72" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
-<label x="50.8" y="142.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="S4" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="137.16" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
+<label x="60.96" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="S4" gate="G$1" pin="6"/>
+</segment>
+</net>
+<net name="SFT/HRD_RX" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="D2"/>
+<wire x1="299.72" y1="127" x2="297.18" y2="127" width="0.1524" layer="91"/>
+<label x="299.72" y="127" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S4" gate="G$1" pin="4"/>
+<wire x1="60.96" y1="132.08" x2="58.42" y2="132.08" width="0.1524" layer="91"/>
+<label x="60.96" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="SFT/HRD_TX" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="*D3"/>
+<wire x1="299.72" y1="124.46" x2="297.18" y2="124.46" width="0.1524" layer="91"/>
+<label x="299.72" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S4" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
+<label x="60.96" y="139.7" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 </nets>
