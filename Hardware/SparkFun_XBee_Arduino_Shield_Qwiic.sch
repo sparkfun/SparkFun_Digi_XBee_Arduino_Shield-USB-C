@@ -885,13 +885,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="V_USB">
-<description>&lt;h3&gt;USB Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="V_USB" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
-</symbol>
 <symbol name="5V">
 <description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -948,19 +941,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Generic voltage input supply symbol.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="V_USB" prefix="SUPPLY">
-<description>&lt;h3&gt;USB Voltage Supply&lt;/h3&gt;</description>
-<gates>
-<gate name="G$1" symbol="V_USB" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -27547,12 +27527,9 @@ Shield form compatible with the Arduino Uno R3.
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SHLD" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="B1" library="SparkFun-Boards" deviceset="ARDUINO_UNO_R3_SHIELD" device="NOLABELS"/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT60A" value="3A/10V/280mV"/>
-<part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="47PF" device="-0603-50V-5%" value="47pF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="10PF" device="-0603-50V-5%" value="10pF"/>
 <part name="SUPPLY24" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
@@ -27579,7 +27556,6 @@ Shield form compatible with the Arduino Uno R3.
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY21" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="SUPPLY22" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="3.3V_SW" device=""/>
 <part name="SUPPLY25" library="SparkFun-PowerSymbols" deviceset="3.3V_SW" device=""/>
 <part name="SUPPLY26" library="SparkFun-PowerSymbols" deviceset="3.3V_SW" device=""/>
@@ -27589,6 +27565,8 @@ Shield form compatible with the Arduino Uno R3.
 <part name="S4" library="SparkFun-Switches" deviceset="SWITCH-DPDT" device="-SMD-AYZ0202"/>
 <part name="ATX" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="ARX" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V_SW" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27600,7 +27578,7 @@ Check Datasheet for your specific module.</text>
 <text x="424.18" y="7.62" size="2.54" layer="94" font="vector" align="center">v12</text>
 <text x="363.22" y="10.16" size="2.54" layer="94" font="vector" align="center">Elias Santistevan</text>
 <text x="157.48" y="63.5" size="2.54" layer="94" font="vector" align="center">Buttons and LEDs</text>
-<text x="167.64" y="264.16" size="1.778" layer="97" font="vector" align="center">VIN: 3.8 - 6V
+<text x="167.64" y="266.7" size="1.778" layer="97" font="vector" align="center">VIN: 3.8 - 6V
 Iout: 2A Max</text>
 <text x="378.46" y="203.2" size="1.778" layer="97" font="vector" align="center">Cut I2C jumper to remove pullups.</text>
 <text x="154.94" y="58.42" size="1.778" layer="97" font="vector" align="center">Cut respective jumper to sever power to LED.</text>
@@ -27620,9 +27598,7 @@ USB Shield from Ground. </text>
 <wire x1="180.34" y1="68.58" x2="236.22" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <wire x1="78.74" y1="68.58" x2="78.74" y2="124.46" width="0.2032" layer="97" style="longdash"/>
 <text x="287.02" y="154.94" size="2.54" layer="94" font="vector" align="center">R3 Footprint Plated Through Hole</text>
-<text x="281.94" y="269.24" size="1.778" layer="97" font="vector" align="center">Use "UART" USB-C for general operation. </text>
 <text x="127" y="154.94" size="2.54" layer="94" font="vector" align="center">Power Jumper </text>
-<text x="167.64" y="269.24" size="1.778" layer="97" font="vector" align="center">VIN R3: 7-15V</text>
 <wire x1="78.74" y1="124.46" x2="78.74" y2="160.02" width="0.2032" layer="97" style="longdash"/>
 <wire x1="236.22" y1="68.58" x2="330.2" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <wire x1="180.34" y1="160.02" x2="180.34" y2="124.46" width="0.1524" layer="97" style="longdash"/>
@@ -27647,7 +27623,7 @@ powered from R3 Board. </text>
 <text x="81.28" y="71.12" size="1.778" layer="97" font="vector">Note: Some XBee 3 modules, namely
 those with GNSS and LTE capabilites,
 consume more power than is possible
-to be provided through this switch. 
+to be provided through the R3/4 board. 
 Use the onboard USB-C connector in this case.</text>
 <text x="40.64" y="154.94" size="2.54" layer="94" font="vector" align="center">UART Select</text>
 <text x="40.64" y="144.78" size="1.778" layer="97" font="vector" align="center">Note: Disconnect the
@@ -27867,9 +27843,6 @@ board.</text>
 <instance part="GND19" gate="1" x="292.1" y="203.2" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="292.1" y="202.946" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="287.02" y="238.76" smashed="yes">
-<attribute name="VALUE" x="287.02" y="241.554" size="1.778" layer="96" font="vector" align="bottom-center"/>
-</instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="330.2" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="342.9" y="1.27" size="2.54" layer="94" font="vector"/>
@@ -27884,13 +27857,6 @@ board.</text>
 </instance>
 <instance part="GND5" gate="1" x="269.24" y="88.9" smashed="yes">
 <attribute name="VALUE" x="269.24" y="88.646" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="D5" gate="G$1" x="160.02" y="241.3" smashed="yes">
-<attribute name="NAME" x="157.48" y="243.332" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="157.48" y="239.268" size="1.778" layer="96" font="vector" align="top-left"/>
-</instance>
-<instance part="SUPPLY19" gate="G$1" x="154.94" y="243.84" smashed="yes">
-<attribute name="VALUE" x="154.94" y="246.634" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="C5" gate="G$1" x="43.18" y="177.8" smashed="yes">
 <attribute name="NAME" x="45.339" y="181.356" size="1.778" layer="95" font="vector" rot="R90"/>
@@ -27982,9 +27948,6 @@ board.</text>
 <instance part="SUPPLY3" gate="G$1" x="119.38" y="226.06" smashed="yes">
 <attribute name="VALUE" x="119.38" y="228.854" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY22" gate="G$1" x="165.1" y="243.84" smashed="yes">
-<attribute name="VALUE" x="165.1" y="246.634" size="1.778" layer="96" font="vector" align="bottom-center"/>
-</instance>
 <instance part="SUPPLY15" gate="G$1" x="139.7" y="99.06" smashed="yes">
 <attribute name="VALUE" x="139.7" y="101.854" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
@@ -28015,6 +27978,12 @@ board.</text>
 <instance part="ARX" gate="G$1" x="43.18" y="96.52" smashed="yes">
 <attribute name="NAME" x="43.18" y="99.568" size="1.778" layer="95" font="vector" align="center"/>
 </instance>
+<instance part="SUPPLY6" gate="G$1" x="287.02" y="238.76" smashed="yes">
+<attribute name="VALUE" x="287.02" y="241.554" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY9" gate="G$1" x="207.68" y="133.06" smashed="yes">
+<attribute name="VALUE" x="207.68" y="135.854" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28039,6 +28008,11 @@ board.</text>
 <pinref part="B1" gate="G$1" pin="SDA"/>
 <wire x1="299.72" y1="96.52" x2="297.18" y2="96.52" width="0.1524" layer="91"/>
 <label x="299.72" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<wire x1="17.78" y1="228.6" x2="20.32" y2="228.6" width="0.1524" layer="91"/>
+<label x="17.78" y="228.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="D+/SDA/DIO11"/>
 </segment>
 </net>
 <net name="D1/SCL" class="0">
@@ -28650,20 +28624,6 @@ board.</text>
 <wire x1="139.7" y1="22.86" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="V_USB" class="0">
-<segment>
-<pinref part="UART" gate="J1" pin="VBUS"/>
-<wire x1="284.48" y1="236.22" x2="287.02" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="238.76" x2="287.02" y2="236.22" width="0.1524" layer="91"/>
-<pinref part="SUPPLY9" gate="G$1" pin="V_USB"/>
-</segment>
-<segment>
-<pinref part="D5" gate="G$1" pin="A"/>
-<wire x1="154.94" y1="243.84" x2="154.94" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="241.3" x2="157.48" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="SUPPLY19" gate="G$1" pin="V_USB"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="UART" gate="J1" pin="CC2"/>
@@ -28686,20 +28646,6 @@ board.</text>
 <wire x1="284.48" y1="223.52" x2="292.1" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="223.52" x2="292.1" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="SHLD" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="XBEE_D+/SDA" class="2">
-<segment>
-<wire x1="17.78" y1="228.6" x2="20.32" y2="228.6" width="0.1524" layer="91"/>
-<label x="17.78" y="228.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="D+/SDA/DIO11"/>
-</segment>
-</net>
-<net name="XBEE_D-" class="2">
-<segment>
-<pinref part="J2" gate="G$1" pin="D-"/>
-<wire x1="17.78" y1="226.06" x2="20.32" y2="226.06" width="0.1524" layer="91"/>
-<label x="17.78" y="226.06" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -28818,10 +28764,10 @@ board.</text>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="162.56" y1="241.3" x2="165.1" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="241.3" x2="165.1" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="SUPPLY22" gate="G$1" pin="VCC"/>
+<pinref part="UART" gate="J1" pin="VBUS"/>
+<wire x1="284.48" y1="236.22" x2="287.02" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
+<wire x1="287.02" y1="236.22" x2="287.02" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V_SW" class="0">
@@ -28845,6 +28791,10 @@ board.</text>
 <wire x1="256.54" y1="142.24" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="3.3V"/>
 <wire x1="271.78" y1="104.14" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY9" gate="G$1" pin="3.3V_SW"/>
+<wire x1="207.68" y1="130.52" x2="207.68" y2="133.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN-TRANS" class="0">

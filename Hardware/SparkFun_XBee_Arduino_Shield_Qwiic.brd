@@ -9,8 +9,8 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="23" fill="1" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="39" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="23" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="39" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="26" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -15079,20 +15079,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="SOD-323">
-<description>SOD-323 (Small Outline Diode)</description>
-<wire x1="-1.77" y1="0.625" x2="-1.77" y2="-0.625" width="0.2032" layer="21"/>
-<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-0.9" y1="0.625" x2="0.9" y2="0.625" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="-0.625" x2="0.9" y2="-0.625" width="0.2032" layer="21"/>
-<wire x1="-1.651" y1="0.762" x2="1.651" y2="0.762" width="0.127" layer="39"/>
-<wire x1="1.651" y1="0.762" x2="1.651" y2="-0.762" width="0.127" layer="39"/>
-<wire x1="1.651" y1="-0.762" x2="-1.651" y2="-0.762" width="0.127" layer="39"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.127" layer="39"/>
-</package>
 <package name="SOT23-3">
 <description>&lt;h3&gt;SOT23-3X&lt;/h3&gt;
 
@@ -17233,11 +17219,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="26.67" y="59.944" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="26.67" y="-0.254" size="0.6096" layer="25" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="D5" library="SparkFun-DiscreteSemi" package="SOD-323" value="3A/10V/280mV" x="26.67" y="11.43" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.67" y="10.668" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="DIO-14072" x="29.21" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="26.67" y="12.192" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
-</element>
 <element name="U$29" library="topmirror" package="#GND#0" value="" x="48.133" y="31.7246" smashed="yes"/>
 <element name="U$9" library="topmirror" package="#NC#1" value="" x="23.876" y="31.75" smashed="yes"/>
 <element name="C5" library="SparkFun-Capacitors" package="0603" value="47pF" x="6.985" y="48.26" smashed="yes" rot="R270">
@@ -17415,6 +17396,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="4.064" y1="6.985" x2="4.064" y2="11.176" width="0.254" layer="1"/>
 <wire x1="5.715" y1="29.21" x2="7.005" y2="30.5" width="0.254" layer="1"/>
 <wire x1="7.005" y1="30.5" x2="10.5864" y2="30.5" width="0.254" layer="1"/>
+<contactref element="J2" pad="7"/>
+<wire x1="15.44" y1="37.21" x2="19.305" y2="37.21" width="0.254" layer="1"/>
+<wire x1="21.59" y1="34.925" x2="21.59" y2="34.29" width="0.254" layer="1"/>
+<wire x1="19.305" y1="37.21" x2="21.59" y2="34.925" width="0.254" layer="1"/>
 </signal>
 <signal name="D1/SCL">
 <contactref element="J2" pad="19"/>
@@ -17973,29 +17958,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="51.3207" y1="12.7" x2="51.3207" y2="13.0937" width="0.254" layer="16"/>
 <wire x1="51.3207" y1="13.0937" x2="51.816" y2="13.589" width="0.254" layer="16"/>
 </signal>
-<signal name="V_USB">
-<contactref element="UART" pad="VBUS1"/>
-<contactref element="UART" pad="VBUS2"/>
-<polygon width="0.127" layer="1" thermals="no">
-<vertex x="25.273" y="7.366"/>
-<vertex x="25.273" y="5.334"/>
-<vertex x="26.797" y="3.81"/>
-<vertex x="29.337" y="3.81"/>
-<vertex x="30.607" y="5.08"/>
-<vertex x="30.607" y="6.477"/>
-<vertex x="30.226" y="6.477"/>
-<vertex x="30.226" y="5.715"/>
-<vertex x="30.099" y="5.588"/>
-<vertex x="25.781" y="5.588"/>
-<vertex x="25.781" y="7.366"/>
-</polygon>
-<contactref element="D5" pad="A"/>
-<wire x1="25.49" y1="7.1882" x2="25.49" y2="6.01" width="0.2032" layer="1"/>
-<wire x1="25.1206" y1="7.62" x2="25.49" y2="7.2506" width="0.762" layer="1"/>
-<wire x1="25.49" y1="7.2506" x2="25.49" y2="7.1882" width="0.762" layer="1"/>
-<wire x1="25.1206" y1="7.62" x2="25.1206" y2="11.0306" width="0.762" layer="1"/>
-<wire x1="25.1206" y1="11.0306" x2="25.52" y2="11.43" width="0.762" layer="1"/>
-</signal>
 <signal name="N$5">
 <contactref element="UART" pad="B5"/>
 <contactref element="R8" pad="2"/>
@@ -18035,12 +17997,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="UART" pad="SHLD8"/>
 <via x="25.4" y="1.27" extent="1-16" drill="0.3048"/>
 <via x="30.48" y="1.27" extent="1-16" drill="0.3048"/>
-</signal>
-<signal name="XBEE_D+/SDA" class="2">
-<contactref element="J2" pad="7"/>
-</signal>
-<signal name="XBEE_D-" class="2">
-<contactref element="J2" pad="8"/>
 </signal>
 <signal name="5V">
 <contactref element="B1" pad="5V"/>
@@ -18135,7 +18091,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="U2" pad="3"/>
 <contactref element="C1" pad="1"/>
 <contactref element="R3" pad="2"/>
-<contactref element="D5" pad="C"/>
 <polygon width="0.127" layer="1" thermals="no">
 <vertex x="26.924" y="10.795"/>
 <vertex x="31.5722" y="10.795"/>
@@ -18160,8 +18115,29 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="39.1922" y1="14.83764375" x2="39.1922" y2="25.9334" width="0.762" layer="15"/>
 <wire x1="43.18" y1="29.9212" x2="43.18" y2="31.8008" width="0.762" layer="15"/>
 <wire x1="39.1922" y1="25.9334" x2="43.18" y2="29.9212" width="0.762" layer="15"/>
-<wire x1="27.82" y1="11.43" x2="27.82" y2="13.162" width="0.762" layer="1"/>
-<wire x1="27.82" y1="13.162" x2="27.52" y2="13.462" width="0.762" layer="1"/>
+<contactref element="UART" pad="VBUS1"/>
+<contactref element="UART" pad="VBUS2"/>
+<wire x1="25.49" y1="7.1882" x2="25.49" y2="6.01" width="0.2032" layer="1"/>
+<wire x1="25.1206" y1="7.62" x2="25.49" y2="7.2506" width="0.762" layer="1"/>
+<wire x1="25.49" y1="7.2506" x2="25.49" y2="7.1882" width="0.762" layer="1"/>
+<wire x1="25.1206" y1="7.62" x2="25.1206" y2="11.0306" width="0.762" layer="1"/>
+<wire x1="25.1206" y1="11.0306" x2="25.774" y2="11.684" width="0.762" layer="1"/>
+<wire x1="25.774" y1="11.684" x2="28.702" y2="11.684" width="0.762" layer="1"/>
+<wire x1="28.702" y1="11.684" x2="29.2354" y2="12.2174" width="0.762" layer="1"/>
+<wire x1="29.2354" y1="12.2174" x2="29.2354" y2="13.1826" width="0.762" layer="1"/>
+<polygon width="0.127" layer="1" thermals="no">
+<vertex x="25.273" y="7.366"/>
+<vertex x="25.273" y="5.334"/>
+<vertex x="26.797" y="3.81"/>
+<vertex x="29.337" y="3.81"/>
+<vertex x="30.607" y="5.08"/>
+<vertex x="30.607" y="6.477"/>
+<vertex x="30.226" y="6.477"/>
+<vertex x="30.226" y="5.715"/>
+<vertex x="30.099" y="5.588"/>
+<vertex x="25.781" y="5.588"/>
+<vertex x="25.781" y="7.366"/>
+</polygon>
 </signal>
 <signal name="3.3V_SW">
 <contactref element="S5" pad="3"/>
@@ -18267,10 +18243,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <approved hash="19,16,af2a3d79f71b0421"/>
 <approved hash="19,16,52932ad319510293"/>
 <approved hash="19,16,bad7aaf71af71ad7"/>
-<approved hash="19,16,f6a5cecdbecda6a5"/>
 <approved hash="19,1,77250dcd3bcd2725"/>
 <approved hash="19,1,fa27cacfdacfda27"/>
 <approved hash="19,16,0b200f043b052723"/>
+<approved hash="19,16,c3a7c5cfbfcfa3a7"/>
 </errors>
 </board>
 </drawing>
