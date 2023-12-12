@@ -155,7 +155,7 @@ plugins:
       type: timeago
   # Add git committers at the bottom of the page
   - git-committers:
-      repository: sparkfun/SparkFun_ESP32_Qwiic_Pro_Mini
+      repository: sparkfun/SparkFun_XBee_Arduino_Shield-USB-C
       branch: main
   # Add git authors at the bottom of the page
   - git-authors
@@ -198,7 +198,7 @@ markdown_extensions:
   - md_in_html
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
       options:
         custom_icons:
