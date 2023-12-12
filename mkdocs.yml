@@ -1,15 +1,17 @@
 # Documentation page information
-site_name: SparkFun XBee Development Arduino Shield (Qwiic) Hookup Guide
-site_description: A guide for getting started with the SparkFun XBee Development Arduino Shield (Qwiic)
-site_url: https://sparkfun.github.io/SparkFun_XBee3_Arduino_Shield
+site_name: SparkFun XBee Arduino Shield Hookup Guide
+site_description: A guide for getting started with the SparkFun XBee Arduino Shield
+site_url: https://sparkfun.github.io/SparkFun_XBee_Arduino_Shield-USB-C
 site_author: SparkFun Electronics
 
-repo_url: https://github.com/sparkfun/SparkFun_XBee3_Arduino_Shield
-repo_name: sparkfun/SparkFun_XBee3_Arduino_Shield
+repo_url: https://github.com/sparkfun/SparkFun_XBee_Arduino_Shield-USB-C
+repo_name: sparkfun/SparkFun_XBee_Arduino_Shield-USB-C
 
 copyright:
-  Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;</a><br>
+  Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;<br>
   <a href="https://goo.gl/maps/vkstCpQZW6jZMjzYA" target="_blank" rel="noopener">6333 Dry Creek Parkway, Niwot, Colorado 80503</a>
+
+
 
 # Default edit/view actions to "main" branch, instead of "master"
 edit_uri: blob/main/docs/
@@ -153,7 +155,7 @@ plugins:
       type: timeago
   # Add git committers at the bottom of the page
   - git-committers:
-      repository: sparkfun/SparkFun_XBee3_Arduino_Shield
+      repository: sparkfun/SparkFun_ESP32_Qwiic_Pro_Mini
       branch: main
   # Add git authors at the bottom of the page
   - git-authors
@@ -246,18 +248,16 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 
-
 # Configures webpage navigation
 nav:
   - Hookup Guide:
     - Introduction: introduction.md
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
-    - <Product Name> Arduino Library:
-      - Software Setup: software_setup.md
-      - Arduino Examples: examples.md
-  - Resources: resources.md
+    - Software Setup: software_setup_and_programming.md
+  - Resources: resources_and_going_further.md
   - Support:
     - Troubleshooting: troubleshooting.md
     - Submit Issues: github/file_issue.md
     - Contribute: github/contribute.md
+
