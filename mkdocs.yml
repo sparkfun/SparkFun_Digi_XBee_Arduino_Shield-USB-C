@@ -153,6 +153,10 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
+  # Add git committers at the bottom of the page
+  - git-committers:
+      repository: sparkfun/SparkFun_XBee_Arduino_Shield-USB-C
+      branch: main
   # Add git authors at the bottom of the page
   - git-authors
   # Enables use of Git submodules and larger code base
