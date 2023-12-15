@@ -19,7 +19,7 @@ Disconnect the UART Lines when uploading to the R3/R4 Board.
 
 ### 3v3 Source Selection
 
-Flip the switch to the R3/R4 position to allow the XBee Shield to be powered from the R3/R4 Board. Note that some XBee 3 modules, namely those with GNSS and LTE capabilities, consume more power than can be provided through the R3/R4 board. Use the onboard USB-C connector in this case. 
+The 3v3 source selection switch allows the user to choose whether the XBee Shield is powered from the R3/R4 board or from the onboard USB-C. Some XBee 3 modules, namely those with GNSS and LTE capabilities, consume more power than can be provided through the R3/R4 board. Use the onboard USB-C connector in this case. 
 
 
 
@@ -95,7 +95,7 @@ The RSSI/PWM output is enabled continuously, unlike other XBee products where th
 
 #### Power Jumper
 
-The X1 Jumper connects power from the Shield to the 5V rail on the connected R3/R4 board. 
+The X1 Jumper connects power from the Shield to the 5V rail on the connected R3/R4 board. Cutting this jumper will disconnect this power path. 
 
 #### ATX/ARX
 
@@ -122,7 +122,7 @@ If power consumption is an issue, you need to run dark, or if you just don't lik
 
 #### SHLD
 
-For most applications, the single point grounding of the Direct USB or UART at the USB-C connector is sufficient. However, should you run into problems with EMI/EMC, we've provided a jumper that allow you to disconnect the USB Shield from ground.
+For most applications, the single point grounding of the USB-C connector is sufficient. However, should you run into problems with EMI/EMC, we've provided a jumper that allow you to disconnect the USB Shield from ground.
 
 <figure markdown>
 [![Shield Jumpers](assets/imgs/){ width="400" }](assets/imgs/ "Click to enlarge")
@@ -145,10 +145,8 @@ The I<sup>2</sup>C jumper pulls the SDA and SCL pins to VDD (normally 3.3V) thro
 The board dimensions are illustrated in the drawing below; the listed measurements are in inches.
 
 <figure markdown>
-[![Board Dimensions](../assets/img/dimensions.png){ width="400" }](../assets/img/dimensions.png "Click to enlarge")
-<figcaption markdown>
-[Board dimensions (PDF)](../assets/board_files/dimensions.pdf) for the <Product Name>, in inches.
-</figcaption>
+[![Board Dimensions](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_BoardOutline.png){ width="400" }](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_BoardOutline.png "Click to enlarge")
+<figcaption markdown>SparkFun XBee Arduino Shield Board Dimensions</figcaption>
 </figure>
 
 

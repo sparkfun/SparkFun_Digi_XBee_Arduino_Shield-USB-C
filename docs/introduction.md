@@ -2,34 +2,28 @@
 icon: material/book-open-page-variant
 ---
 
-The [SparkFun XBee Development Arduino Shield (Qwiic)](https://www.sparkfun.com/products/22131) rocks! Get it now and be cool like rest of us. 
 
-<center>
-<div class="grid cards" style="width:500px;" markdown>
+<div class="grid cards desc" markdown>
 
--   <a href="https://www.sparkfun.com/products/22131">
-      <figure markdown>
-        <img src="https://cdn.sparkfun.com/assets/parts/2/1/9/9/3/22131-_WRL_SparkFun_XBee_Development_Arduino_Shield-_01.jpg" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun XBee Development Arduino Shield (Qwiic)">
-      </figure>
-    </a>
+-    <a href="https://www.sparkfun.com/products/22131">
+    **SparkFun XBee Development Arduino Shield (Qwiic)**<br>
+    **SKU:** WRL-22131
 
     ---
 
-    <a href="https://www.sparkfun.com/products/22131">
-      <b>SparkFun XBee Development Arduino Shield (Qwiic)</b>
-      <br />
-      WRL-22131
-      <br />
-      <center>[Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/22131){ .md-button .md-button--primary }</center>
-    </a>
+    <figure markdown>
+    ![Product Thumbnail]()
+    </figure></a>
+    
+-    The SparkFun XBee Arduino Shield is a fantastic way to add extensive XBee functionality to your Arduino project. It breaks out the functionality of the XBee 3 series you know and love, PLUS the ability to connect to the cellular network and GNSS. This Shield includes a USB-C connector, a Qwiic connector for all those lovely I<sup>2</sup>C sensors, as well as a Reset button and a user-defined D0 button, the ability to power your board from the R3/R4 board, and UART selection. 
+
+    <center>
+    [Purchase from SparkFun :fontawesome-solid-cart-plus:{ .heart }](https://www.sparkfun.com/products/22131){ .md-button .md-button--primary }
+    </center>
 
 </div>
-</center>
-<!--
-<div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/R37YaJobexs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
--->
+
+
 
 ## Required Materials
 To get started, users will need a few items. Now some users may already have a few of these items, feel free to modify your cart accordingly.
@@ -63,23 +57,49 @@ To get started, users will need a few items. Now some users may already have a f
 
 As a more professionally oriented product, we will skip over the more fundamental tutorials (i.e. [**Ohm's Law**](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) and [**What is Electricity?**](https://learn.sparkfun.com/tutorials/what-is-electricity)). However, below are a few tutorials that may help users familiarize themselves with various aspects of the board.
 
+<div class="grid cards hide col-4" markdown align="center">
 
-<table style="border-style:none">
-    <tr>
-        <td align="center">
-            <a href="https://www.sparkfun.com/pages/xbee_guide">XBee Buying Guide<br>
-            <img src="https://cdn.sparkfun.com/c/178-100/assets/learn_tutorials/3/5/3/action-usb.jpg" ></a>
-        </td>
-        <td align="center">
-            <a href="https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu">Exploring XBees and XCTU<br>
-            <img src="https://cdn.sparkfun.com/c/178-100/assets/learn_tutorials/2/2/3/xbee-wire.jpg"></a>
-        </td>
-        <td align="center">
-            <a href="https://learn.sparkfun.com/tutorials/serial-communication">Serial Communication<br>
-            <img src="https://cdn.sparkfun.com/c/178-100//assets/7/d/f/9/9/50d24be7ce395f1f6c000000.jpg"></a>
-        </td>
-    </tr>
-</table>
+-   <a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering">
+    <figure markdown>
+    ![How to Solder: Through-Hole Soldering](https://cdn.sparkfun.com/assets/learn_tutorials/5/Soldering_Action-01.jpg)
+    </figure>
+    </a>
+    <a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering">**How to Solder: Through-Hole Soldering**
+    </a>
+
+-   <a href="https://learn.sparkfun.com/tutorials/sparkfun-serial-basic-ch340c-hookup-guide">
+    <figure markdown>
+    ![SparkFun Serial Basic CH340C Hookup Guide](https://cdn.sparkfun.com/assets/learn_tutorials/8/3/7/USB-C_and_5V_Pro_Mini.jpg)
+    </figure>
+    </a>
+    <a href="https://learn.sparkfun.com/tutorials/sparkfun-serial-basic-ch340c-hookup-guide">**SparkFun Serial Basic CH340C Hookup Guide**
+    </a>    
+
+-   <a href="https://learn.sparkfun.com/tutorials/82">
+    <figure markdown>
+    ![I2C](https://cdn.sparkfun.com/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg)
+    </figure>
+    </a>
+    <a href="https://learn.sparkfun.com/tutorials/82">**I2C**
+    </a>
+
+-   <a href="https://learn.sparkfun.com/tutorials/analog-vs-digital">
+    <figure markdown>
+    ![Analog vs. Digital](https://cdn.sparkfun.com/assets/learn_tutorials/8/9/analog_vs_digital_thumb.png)
+    </figure>
+    </a>
+    <a href="https://learn.sparkfun.com/tutorials/analog-vs-digital">**Analog vs. Digital**
+    </a>
+
+-   <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">
+    <figure markdown>
+    ![SPI](https://cdn.sparkfun.com/assets/learn_tutorials/1/6/spiThumb_Updated2.png)
+    </figure>
+    </a>
+    <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">**SPI**
+    </a>
+</div>
+
 
 <center>
 <div align="center">
@@ -91,7 +111,7 @@ As a more professionally oriented product, we will skip over the more fundamenta
 </div>
 </center>
 
-One of the new, advanced features of our Processor Boards is that they take advantage of the [Qwiic connect system](https://www.sparkfun.com/qwiic). We recommend familiarizing yourself with the **Logic Levels** and **I<sup>2</sup>C** tutorials.  Click on the banner above to learn more about [Qwiic products](https://www.sparkfun.com/qwiic).
+The SparkFun ESP32 Qwiic Pro Mini takes advantage of the [Qwiic connect system](https://www.sparkfun.com/qwiic). We recommend familiarizing yourself with the **Logic Levels** and **I<sup>2</sup>C** tutorials.  Click on the banner above to learn more about [Qwiic products](https://www.sparkfun.com/qwiic).
 
 <center>
     <iframe width="600" height="327" src="https://www.youtube.com/embed/x0RDEHqFIF8" title="SparkFun's Qwiic Connect System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

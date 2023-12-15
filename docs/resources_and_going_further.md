@@ -1,7 +1,7 @@
 For more information related to the SparkFun XBee Arduino Shield, check out the resources below:
+
 * [Product Page](https://www.sparkfun.com/products/22131)
-* [Sc
-atic](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_Schematic.pdf) (PDF)
+* [Schematic](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_Schematic.pdf) (PDF)
 * [Eagle Files](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_EagleFiles.zip) (ZIP)
 * [Board Dimensions](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_BoardOutline.png) (PNG)
 * [Hardware GitHub Respository](https://github.com/sparkfun/SparkFun_XBee_Arduino_Shield-USB-C)
