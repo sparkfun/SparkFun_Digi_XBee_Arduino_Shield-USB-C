@@ -12,7 +12,7 @@ icon: material/book-open-page-variant
     ---
 
     <figure markdown>
-    ![Product Thumbnail]()
+    ![Product Thumbnail](https://cdn.sparkfun.com/assets/parts/2/1/9/9/3/WRL-22131-XBee-Arduino-Shield-USB-C-Feature.jpg)
     </figure></a>
     
 -    The SparkFun XBee Arduino Shield is a fantastic way to add extensive XBee functionality to your Arduino project. It breaks out the functionality of the XBee 3 series you know and love, PLUS the ability to connect to the cellular network and GNSS. This Shield includes a USB-C connector, a Qwiic connector for all those lovely I<sup>2</sup>C sensors, as well as a Reset button and a user-defined D0 button, the ability to power your board from the R3/R4 board, and UART selection. 
@@ -32,13 +32,23 @@ To get started, users will need a few items. Now some users may already have a f
 
 -   <a href="https://www.sparkfun.com/products/22131">
     <figure markdown>
-    ![Product Thumbnail](https://cdn.sparkfun.com/assets/parts/2/1/9/9/3/22131-_WRL_SparkFun_XBee_Development_Arduino_Shield-_01.jpg)
+    ![Product Thumbnail](https://cdn.sparkfun.com/assets/parts/2/1/9/9/3/WRL-22131-XBee-Arduino-Shield-USB-C-Feature.jpg)
     </figure>
 
     ---
 
     **SparkFun XBee Development Arduino Shield (Qwiic)**<br>
     WRL-22131</a>
+
+-   <a href="https://www.sparkfun.com/products/22329">
+    <figure markdown>
+    ![Product Thumbnail](https://cdn.sparkfun.com/assets/parts/2/2/3/2/3/23329-Digi-XBee-3-Low-Power-LTE-M-Feature1.jpg)
+    </figure>
+
+    ---
+
+    **Digi XBee 3 Low-Power LTE-M/NB-IoT, GNSS, no SIM**<br>
+    WRL-22329</a>
 
 -   <a href="https://www.sparkfun.com/products/14743">
     <figure markdown>

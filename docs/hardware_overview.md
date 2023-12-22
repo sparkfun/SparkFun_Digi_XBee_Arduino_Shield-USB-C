@@ -6,59 +6,77 @@ icon: material/cog
 
 We've kept the XBee socket consistent with the XBee pinout, so this breakout board is backwards compatible. In order to take full advantage of this board, we recommend one of the newer Digi XBee boards. Either the [Digi XBee 3 Low-Power LTE-M/NB-IoT, GNSS, no SIM](https://www.sparkfun.com/products/22329) or the [Digi XBee 3 North America LTE Cat 1, 3G, GNSS, no SIM](https://www.sparkfun.com/products/22330). 
 
-
 <figure markdown>
-[![XBeeSocket](assets/imgs/){ width="400" }](assets/imgs/ "Click to enlarge")
+[![XBeeSocket](assets/img/22131-XBee_Dev_Arduino_Shield-XBeeSocket.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-XBeeSocket.jpg "Click to enlarge")
 <figcaption markdown>XBeeSocket</figcaption>
 </figure>
 
 
 ### UART Select Switch
 
-Disconnect the UART Lines when uploading to the R3/R4 Board. 
+The RX/TX pins on this shield are connected to the RX/TX pins of the XBee. These lines go through the UART Select Switch, which allows you to choose whether to talk to the XBee or the digital RX/TX pins. Generally speaking, you will want to disconnect the UART lines when uploading to the R3/R4 board.  
+
+<figure markdown>
+[![UART Select Switch](assets/img/22131-XBee_Dev_Arduino_Shield-UARTSwitch.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-UARTSwitch.jpg "Click to enlarge")
+<figcaption markdown>UART Select Switch</figcaption>
+</figure>
+
 
 ### 3v3 Source Selection
 
 The 3v3 source selection switch allows the user to choose whether the XBee Shield is powered from the R3/R4 board or from the onboard USB-C. Some XBee 3 modules, namely those with GNSS and LTE capabilities, consume more power than can be provided through the R3/R4 board. Use the onboard USB-C connector in this case. 
 
-
-
+<figure markdown>
+[![3V3 Source Selection Switch](assets/img/22131-XBee_Dev_Arduino_Shield-3V3OnOffSwitch.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-3V3OnOffSwitch.jpg "Click to enlarge")
+<figcaption markdown>3V3 Source Selection Switch</figcaption>
+</figure>
 
 ### Buck Converter - AP63203
 
 The AP63203 Buck Converter ensures appropriate power supply to the components of the board. VIN range is <b>3.8V-5.5V</b>. Output is 2A max. 
 
+<figure markdown>
+[![Buck Converter - AP63203](assets/img/22131-XBee_Dev_Arduino_Shield-BuckConverter.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-BuckConverter.jpg "Click to enlarge")
+<figcaption markdown>Buck Converter - AP63203</figcaption>
+</figure>
 
 
+### Enable Pin Translation Circuit 
 
-# ENABLE PIN TRANSLATION? 
+When powering via the USB-C, the enable pin (5V) allows you to turn off power to the XBee. 
 
-
+<figure markdown>
+[![Enable Pin](assets/img/22131-XBee_Dev_Arduino_Shield-ENPin.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-ENPin.jpg "Click to enlarge")
+<figcaption markdown>Enable Pin</figcaption>
+</figure>
 
 
 ### Qwiic Connector
 
-The Qwiic connector on the SparkFun XBee Arduino Shield provides power and I<sup>2</sup>C connectivity to Qwiic breakout boards. 
+The Qwiic connector on the SparkFun XBee Arduino Shield provides power and I<sup>2</sup>C connectivity to Qwiic breakout boards. Note that the I<sup>2</sup>C functionality is not enabled by default. 
 
 <figure markdown>
-[![Qwiic Connector](assets/imgs/){ width="400" }](assets/imgs/ "Click to enlarge")
+[![Qwiic Connector](assets/img/22131-XBee_Dev_Arduino_Shield-QwiicConnex.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-QwiicConnex.jpg "Click to enlarge")
 <figcaption markdown>Qwiic Connector</figcaption>
 </figure>
 
 
-
-### Buttons
+### Reset and D0 Buttons
 
 There are two buttons - D0 and RST. Reset allows you to reset the board without unplugging, the D0 button is provided for user-defined functionality. 
 
+<figure markdown>
+[![Qwiic Connector](assets/img/22131-XBee_Dev_Arduino_Shield-Buttons.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-Buttons.jpg "Click to enlarge")
+<figcaption markdown>Reset and D0 Buttons</figcaption>
+</figure>
 
 
 ### LEDs
 
-There are three LEDs on the board: 
+There are multiple LED indicator lights on the board: 
 
 <figure markdown>
-[![LEDs](assets/imgs/21636-XBeeDevBoard-LEDs.jpg){ width="400" }](assets/imgs/21636-XBeeDevBoard-LEDs.jpg "Click to enlarge")
+[![LEDs](assets/img/22131-XBee_Dev_Arduino_Shield-LEDs.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-LEDs.jpg "Click to enlarge")
 <figcaption markdown>LEDs</figcaption>
 </figure>
 
@@ -66,7 +84,11 @@ There are three LEDs on the board:
 
 This LED lights up when power is provided to the board. 
 
-####ASC
+#### IO4
+
+This LED is a SPI data indicator light. 
+
+#### ASC
 This LED on the development board blinks when the XBee is registered to the cellular network.
 
 | Blink | Timing | Meaning |
@@ -91,19 +113,36 @@ The RSSI/PWM output is enabled continuously, unlike other XBee products where th
 
 
 
+
+
 ### Jumpers
 
-#### Power Jumper
 
-The X1 Jumper connects power from the Shield to the 5V rail on the connected R3/R4 board. Cutting this jumper will disconnect this power path. 
+### X1 Jumper
 
-#### ATX/ARX
+By default, the Shield is not connected to the 5V rail on the connected R3/R4 board. Soldering this jumper will connect this power path. 
 
-Cut these jumpers to disconnect the alternate RX/TX pins from your R3/R4 board. 
+<figure markdown>
+[![X1 Jumper](assets/img/22131-XBee_Dev_Arduino_Shield-X1Jumper.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-X1Jumper.jpg "Click to enlarge")
+<figcaption markdown>X1 Jumper</figcaption>
+</figure>
 
 
 
 
+#### DTX/DRX
+
+Cutting these jumpers will disconnect the digital RX/TX pins from your R3/R4 board. 
+
+<figure markdown>
+[![Digital RX/TX Jumpers](assets/img/22131-XBee_Dev_Arduino_Shield-DTX-DRXJumpers.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-DTX-DRXJumpers.jpg "Click to enlarge")
+<figcaption markdown>Digital RX/TX Jumpers</figcaption>
+</figure>
+
+
+#### Power 
+
+Cutting this jumper will disconnect the Power LED on the front of the board. 
 
 #### ALED/PLED
 
@@ -115,7 +154,7 @@ If power consumption is an issue, you need to run dark, or if you just don't lik
 * IOLED: Green
 
 <figure markdown>
-[![LED Jumpers](assets/imgs/21636-XBeeDevBoard-Jumper-LEDs.jpg){ width="400" }](assets/imgs/21636-XBeeDevBoard-Jumper-LEDs.jpg "Click to enlarge")
+[![LED Jumpers](assets/img/22131-XBee_Dev_Arduino_Shield-LEDJumper.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-LEDJumper.jpg "Click to enlarge")
 <figcaption markdown>LED Jumpers</figcaption>
 </figure>
 
@@ -125,22 +164,21 @@ If power consumption is an issue, you need to run dark, or if you just don't lik
 For most applications, the single point grounding of the USB-C connector is sufficient. However, should you run into problems with EMI/EMC, we've provided a jumper that allow you to disconnect the USB Shield from ground.
 
 <figure markdown>
-[![Shield Jumpers](assets/imgs/){ width="400" }](assets/imgs/ "Click to enlarge")
+[![Shield Jumpers](assets/img/22131-XBee_Dev_Arduino_Shield-ShieldJumper.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-ShieldJumper.jpg "Click to enlarge")
 <figcaption markdown>Shield Jumper</figcaption>
 </figure>
 
-####I2C 
+#### I2C 
 
 The I<sup>2</sup>C jumper pulls the SDA and SCL pins to VDD (normally 3.3V) through two 2.2K Ohm resistors. If you have multiple Qwiic devices on the same bus you may want to disable these by opening the jumper (assuming they are also operating at 3.3V logic).
 
-
 <figure markdown>
-[![I2C Jumper](assets/imgs/21636-XBeeDevBoard-Jumper-I2C.jpg){ width="400" }](assets/imgs/21636-XBeeDevBoard-Jumper-I2C.jpg "Click to enlarge")
+[![I2C Jumper](assets/img/22131-XBee_Dev_Arduino_Shield-I2CJumper.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-I2CJumper.jpg "Click to enlarge")
 <figcaption markdown>I<sup>2</sup>C Jumper</figcaption>
 </figure>
 
 
-###Board Outline
+### Board Outline
 
 The board dimensions are illustrated in the drawing below; the listed measurements are in inches.
 
