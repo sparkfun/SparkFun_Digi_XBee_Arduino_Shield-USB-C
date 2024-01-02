@@ -14,7 +14,7 @@ We've kept the XBee socket consistent with the XBee pinout, so this breakout boa
 
 ### UART Select Switch
 
-The RX/TX pins on this shield are connected to the RX/TX pins of the XBee. These lines go through the UART Select Switch, which allows you to choose whether to talk to the XBee or the digital RX/TX pins. Generally speaking, you will want to disconnect the UART lines when uploading to the R3/R4 board.  
+The RX/TX pins on this shield are connected to the upload of the standard R3/R4 board footprint. These lines go through the switch, which allows you to choose whether to talk to the XBee or the digital RX/TX pins. Generally speaking, you will want to disconnect the UART lines when uploading to the R3/R4 board.
 
 <figure markdown>
 [![UART Select Switch](assets/img/22131-XBee_Dev_Arduino_Shield-UARTSwitch.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-UARTSwitch.jpg "Click to enlarge")
