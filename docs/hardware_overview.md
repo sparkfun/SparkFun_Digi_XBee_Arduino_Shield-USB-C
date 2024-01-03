@@ -4,7 +4,7 @@ icon: material/cog
 
 ### XBee Smart Modem Socket
 
-We've kept the XBee socket consistent with the XBee pinout, so this breakout board is backwards compatible. In order to take full advantage of this board, we recommend one of the newer Digi XBee boards. Either the [Digi XBee 3 Low-Power LTE-M/NB-IoT, GNSS, no SIM](https://www.sparkfun.com/products/22329) or the [Digi XBee 3 North America LTE Cat 1, 3G, GNSS, no SIM](https://www.sparkfun.com/products/22330). 
+We've kept the XBee socket consistent with the XBee pinout, so this breakout board is backwards compatible. In order to take full advantage of this board, we recommend one of the newer Digi XBee boards. The [Digi XBee 3 Low-Power LTE-M/NB-IoT, GNSS, no SIM](https://www.sparkfun.com/products/22329) is a great bet. 
 
 <figure markdown>
 [![XBeeSocket](assets/img/22131-XBee_Dev_Arduino_Shield-XBeeSocket.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-XBeeSocket.jpg "Click to enlarge")
@@ -86,7 +86,7 @@ This LED lights up when power is provided to the board.
 
 #### IO4
 
-This LED is a SPI data indicator light. 
+This Green LED is a user-defined LED connected to D4 of the XBee. 
 
 #### ASC
 This LED on the development board blinks when the XBee is registered to the cellular network.
@@ -144,7 +144,7 @@ Cutting these jumpers will disconnect the digital RX/TX pins from your R3/R4 boa
 
 Cutting this jumper will disconnect the Power LED on the front of the board. 
 
-#### ALED/PLED
+#### ALED/PLED/RLED/IOLED
 
 If power consumption is an issue, you need to run dark, or if you just don't like the LEDs, cut the respective jumper to sever power to the LED. 
 
