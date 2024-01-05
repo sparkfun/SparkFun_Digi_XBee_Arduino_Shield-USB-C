@@ -53,7 +53,7 @@ When powering via the USB-C, the enable pin (5V) allows you to turn off power to
 
 ### Qwiic Connector
 
-The Qwiic connector on the SparkFun Digi XBee Arduino Shield provides power and I<sup>2</sup>C connectivity to Qwiic breakout boards. Note that the I<sup>2</sup>C functionality is not enabled by default. 
+The Qwiic connector on the SparkFun Digi XBee® Development Arduino Shield (Qwiic) provides power and I<sup>2</sup>C connectivity to Qwiic breakout boards. Note that the I<sup>2</sup>C functionality is not enabled by default. 
 
 <figure markdown>
 [![Qwiic Connector](assets/img/22131-XBee_Dev_Arduino_Shield-QwiicConnex.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-QwiicConnex.jpg "Click to enlarge")
@@ -189,7 +189,7 @@ The board dimensions are illustrated in the drawing below; the listed measuremen
 
 
 ??? tip "Need more measurements?"
-	For more information about the board's dimensions, users can download the [Eagle files](../assets/board_files/eagle_files.zip) for the board. These files can be opened in Eagle and additional measurements can be made with the dimensions tool.
+	For more information about the board's dimensions, users can download the [Eagle files](assets/board_files/SparkFun_Digi_XBee_Arduino_Shield_Qwiic_EagleFiles.zip) for the board. These files can be opened in Eagle and additional measurements can be made with the dimensions tool.
 
 	??? info ":octicons-download-16:{ .heart } Eagle - Free Download!"
 		Eagle is a [CAD]("computer-aided design") program for electronics that is free to use for hobbyists and students. However, it does require an account registration to utilize the software.
