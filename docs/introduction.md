@@ -6,7 +6,7 @@ icon: material/book-open-page-variant
 <div class="grid cards desc" markdown>
 
 -    <a href="https://www.sparkfun.com/products/22131">
-    **SparkFun XBee Development Arduino Shield (Qwiic)**<br>
+    **SparkFun Digi XBee® Development Arduino Shield (Qwiic)**<br>
     **SKU:** WRL-22131
 
     ---
@@ -15,7 +15,7 @@ icon: material/book-open-page-variant
     ![Product Thumbnail](https://cdn.sparkfun.com/assets/parts/2/1/9/9/3/WRL-22131-XBee-Arduino-Shield-USB-C-Feature.jpg)
     </figure></a>
     
--    The SparkFun XBee Arduino Shield is your gateway to a world of wireless innovation on your favorite Arduino device. This shield integrates Digi's cutting-edge XBee 3 Low-Power LTE-M/NB-IoT and XBee RR Pro modules with your trusty Arduino, empowering you to build wireless projects that reach further and do more than ever. Whether you're a seasoned developer or a curious beginner, the SparkFun XBee Arduino Shield - USB-C (Qwiic) empowers you to bring your wildest IoT ideas to life. It breaks out the functionality of your XBee module and adds the ability to connect to the cellular network and GNSS. The XBee Arduino Shield includes a USB-C connector, a Qwiic connector for all those lovely I<sup>2</sup>C sensors, as well as a Reset button and a user-defined D0 button, the ability to power your board from the R3/R4 board, and UART selection. 
+-    The Sparkfun Digi XBee® Arduino Shield is your gateway to a world of wireless innovation on your favorite Arduino device. This shield integrates Digi's cutting-edge XBee 3 Low-Power LTE-M/NB-IoT and Digi XBee RR Pro modules (or any existing through-hole Digi XBee module) with your trusty Arduino, empowering you to build wireless projects that reach further and do more than ever. Whether you're a seasoned developer or a curious beginner, the SparkFun Digi XBee® Arduino Shield - USB-C (Qwiic) empowers you to bring your wildest IoT ideas to life. It breaks out the functionality of your XBee module and adds the ability to connect to the cellular network and GNSS. This shield includes a USB-C connector, a Qwiic connector for all those lovely I<sup>2</sup>C sensors, as well as a Reset button and a user-defined D0 button, the ability to power your board from the R3/R4 board, and UART selection. 
 
 
     <center>
@@ -38,7 +38,7 @@ To get started, users will need a few items. Now some users may already have a f
 
     ---
 
-    **SparkFun XBee Development Arduino Shield (Qwiic)**<br>
+    **SparkFun Digi XBee® Development Arduino Shield (Qwiic)**<br>
     WRL-22131</a>
 
 -   <a href="https://www.sparkfun.com/products/22329">

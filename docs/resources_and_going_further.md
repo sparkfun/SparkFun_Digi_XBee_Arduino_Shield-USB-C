@@ -1,11 +1,12 @@
 For more information related to the SparkFun XBee Arduino Shield, check out the resources below:
 
 * [Product Page](https://www.sparkfun.com/products/22131){ target="_blank" }
-* [Schematic](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_Schematic.pdf){ target="_blank" }
-* [Eagle Files](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_EagleFiles.zip){ target="_blank" }
-* [Board Dimensions](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_BoardOutline.png){ target="_blank" }
-* [Hardware GitHub Respository](https://github.com/sparkfun/SparkFun_XBee_Arduino_Shield-USB-C){ target="_blank" }
+* [Schematic](assets/board_files/22131_SparkFun_Digi_XBee_Arduino_Shield_Qwiic_Schematic.pdf){ target="_blank" }
+* [Eagle Files](assets/board_files/SparkFun_Digi_XBee_Arduino_Shield_Qwiic_EagleFiles.zip){ target="_blank" }
+* [Board Dimensions](assets/board_files/22131_SparkFun_Digi_XBee_Arduino_Shield_Qwiic_BoardOutline.png){ target="_blank" }
+* [Hardware GitHub Respository](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C){ target="_blank" }
 * [Digi XBee® 3 Cat1 Smart Modem User Guide](assets/BoardFiles/XBee3_LTE_Cat_1-UserGuide-90002503-1.pdf){ target="_blank" }
+
 
 
 Or check out other [XBee Projects](https://learn.sparkfun.com/tutorials/tags/xbee) for inspiration:

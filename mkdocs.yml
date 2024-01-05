@@ -1,11 +1,11 @@
 # Documentation page information
-site_name: SparkFun XBee Arduino Shield Hookup Guide
-site_description: A guide for getting started with the SparkFun XBee Arduino Shield
-site_url: https://sparkfun.github.io/SparkFun_XBee_Arduino_Shield-USB-C
+site_name: SparkFun Digi XBee® Arduino Shield Hookup Guide
+site_description: A guide for getting started with the SparkFun Digi XBee® Arduino Shield
+site_url: https://sparkfun.github.io/SparkFun_Digi_XBee_Arduino_Shield-USB-C
 site_author: SparkFun Electronics
 
-repo_url: https://github.com/sparkfun/SparkFun_XBee_Arduino_Shield-USB-C
-repo_name: sparkfun/SparkFun_XBee_Arduino_Shield-USB-C
+repo_url: https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C
+repo_name: sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C
 
 copyright:
   Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;<br>
@@ -155,7 +155,7 @@ plugins:
       type: timeago
   # Add git committers at the bottom of the page
   - git-committers:
-      repository: sparkfun/SparkFun_XBee_Arduino_Shield-USB-C
+      repository: sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C
       branch: main
   # Add git authors at the bottom of the page
   - git-authors
