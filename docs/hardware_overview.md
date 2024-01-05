@@ -2,9 +2,9 @@
 icon: material/cog
 ---
 
-### Digi XBee® Smart Modem Socket
+### Digi XBee Smart Modem Socket
 
-We've kept the Digi XBee® socket consistent with the Digi XBee® pinout, so this breakout board is backwards compatible. In order to take full advantage of this board, we recommend one of the newer Digi XBee® boards. The [Digi XBee 3 Low-Power LTE-M/NB-IoT, GNSS, no SIM](https://www.sparkfun.com/products/22329) is a great bet. 
+We've kept the Digi XBee socket consistent with the Digi XBee pinout, so this breakout board is backwards compatible. In order to take full advantage of this board, we recommend one of the newer Digi XBee boards. The [Digi XBee 3 Low-Power LTE-M/NB-IoT, GNSS, no SIM](https://www.sparkfun.com/products/22329) is a great bet. 
 
 <figure markdown>
 [![XBeeSocket](assets/img/22131-XBee_Dev_Arduino_Shield-XBeeSocket.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-XBeeSocket.jpg "Click to enlarge")
@@ -14,7 +14,7 @@ We've kept the Digi XBee® socket consistent with the Digi XBee® pinout, so thi
 
 ### UART Select Switch
 
-The RX/TX pins on this shield are connected to the upload of the standard R3/R4 board footprint. These lines go through the switch, which allows you to choose whether to talk to the Digi XBee® or the digital RX/TX pins. Generally speaking, you will want to disconnect the UART lines when uploading to the R3/R4 board.
+The RX/TX pins on this shield are connected to the upload of the standard R3/R4 board footprint. These lines go through the switch, which allows you to choose whether to talk to the Digi XBee or the digital RX/TX pins. Generally speaking, you will want to disconnect the UART lines when uploading to the R3/R4 board.
 
 <figure markdown>
 [![UART Select Switch](assets/img/22131-XBee_Dev_Arduino_Shield-UARTSwitch.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-UARTSwitch.jpg "Click to enlarge")
@@ -24,7 +24,7 @@ The RX/TX pins on this shield are connected to the upload of the standard R3/R4 
 
 ### 3v3 Source Selection
 
-The 3v3 source selection switch allows the user to choose whether the Digi XBee® Shield is powered from the R3/R4 board or from the onboard USB-C. Some XBee 3 modules, namely those with GNSS and LTE capabilities, consume more power than can be provided through the R3/R4 board. Use the onboard USB-C connector in this case. 
+The 3v3 source selection switch allows the user to choose whether the Digi XBee Shield is powered from the R3/R4 board or from the onboard USB-C. Some XBee 3 modules, namely those with GNSS and LTE capabilities, consume more power than can be provided through the R3/R4 board. Use the onboard USB-C connector in this case. 
 
 <figure markdown>
 [![3V3 Source Selection Switch](assets/img/22131-XBee_Dev_Arduino_Shield-3V3OnOffSwitch.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-3V3OnOffSwitch.jpg "Click to enlarge")
@@ -43,7 +43,7 @@ The AP63203 Buck Converter ensures appropriate power supply to the components of
 
 ### Enable Pin Translation Circuit 
 
-When powering via the USB-C, the enable pin (5V) allows you to turn off power to the Digi XBee®. 
+When powering via the USB-C, the enable pin (5V) allows you to turn off power to the Digi XBee. 
 
 <figure markdown>
 [![Enable Pin](assets/img/22131-XBee_Dev_Arduino_Shield-ENPin.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-ENPin.jpg "Click to enlarge")
@@ -53,7 +53,7 @@ When powering via the USB-C, the enable pin (5V) allows you to turn off power to
 
 ### Qwiic Connector
 
-The Qwiic connector on the SparkFun Digi XBee® Arduino Shield provides power and I<sup>2</sup>C connectivity to Qwiic breakout boards. Note that the I<sup>2</sup>C functionality is not enabled by default. 
+The Qwiic connector on the SparkFun Digi XBee Arduino Shield provides power and I<sup>2</sup>C connectivity to Qwiic breakout boards. Note that the I<sup>2</sup>C functionality is not enabled by default. 
 
 <figure markdown>
 [![Qwiic Connector](assets/img/22131-XBee_Dev_Arduino_Shield-QwiicConnex.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-QwiicConnex.jpg "Click to enlarge")

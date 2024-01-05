@@ -20,7 +20,7 @@ Spot something wrong? Please let us know. <a href="https://github.com/sparkfun/S
 
 All of our documentation can be modified by you! Please help us make it better.
 
-* The documentation files for these pages are contained in the [`docs` folder](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C/tree/main/docs) of the [SparkFun XBee Arduino Shield repository](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C).
+* The documentation files for these pages are contained in the [`docs` folder](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C/tree/main/docs) of the [SparkFun Digi XBee® Arduino Shield repository](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C).
 
 ### 🔍 Spot something wrong?
 
@@ -38,7 +38,7 @@ If a section of the documentation is incorrect, please [open an issue](https://g
 
 All of our designs are open-source! Please help us make it better.
 
-* Our board design files are contained in the [`Hardware` folder](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C/tree/main/Hardware) of the [SparkFun XBee Arduino Shield repository](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C).
+* Our board design files are contained in the [`Hardware` folder](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C/tree/main/Hardware) of the [SparkFun Digi XBee® Arduino Shield repository](https://github.com/sparkfun/SparkFun_Digi_XBee_Arduino_Shield-USB-C).
 
 ### Does something not make sense? 🤔
 

@@ -1,4 +1,4 @@
-For more information related to the SparkFun XBee Arduino Shield, check out the resources below:
+For more information related to the SparkFun Digi XBee® Arduino Shield, check out the resources below:
 
 * [Product Page](https://www.sparkfun.com/products/22131){ target="_blank" }
 * [Schematic](assets/board_files/22131_SparkFun_Digi_XBee_Arduino_Shield_Qwiic_Schematic.pdf){ target="_blank" }
@@ -9,7 +9,7 @@ For more information related to the SparkFun XBee Arduino Shield, check out the 
 
 
 
-Or check out other [XBee Projects](https://learn.sparkfun.com/tutorials/tags/xbee) for inspiration:
+Or check out other [Digi XBee Projects](https://learn.sparkfun.com/tutorials/tags/xbee) for inspiration:
 
 <table style="border-style:none">
     <tr>
