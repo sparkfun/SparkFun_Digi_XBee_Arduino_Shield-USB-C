@@ -4,6 +4,9 @@ icon: material/cog
 
 ### Digi XBee Smart Modem Socket
 
+!!! info
+	Please note that the Sparkfun Digi XBee® Arduino Shield is not meant to be used as a stand alone board. It is a shield and is intended to be used as a shield.
+
 We've kept the Digi XBee socket consistent with the Digi XBee pinout, so this breakout board is backwards compatible. In order to take full advantage of this board, we recommend one of the newer Digi XBee boards. The [Digi XBee 3 Low-Power LTE-M/NB-IoT, GNSS, no SIM](https://www.sparkfun.com/products/22329) is a great bet. 
 
 <figure markdown>
