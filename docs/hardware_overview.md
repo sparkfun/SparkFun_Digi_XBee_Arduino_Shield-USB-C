@@ -19,6 +19,9 @@ We've kept the Digi XBee socket consistent with the Digi XBee pinout, so this br
 
 The RX/TX pins on this shield are connected to the upload of the standard R3/R4 board footprint. These lines go through the switch, which allows you to choose whether to talk to the Digi XBee or the digital RX/TX pins. Generally speaking, you will want to disconnect the UART lines when uploading to the R3/R4 board.
 
+!!! info 
+	Using Digital RX/TX with the ESP32 requires familiarity with Software Serial or "Hardware" Serial. If using the Artemis module, note that it will not connect to the upload lines. 
+
 <figure markdown>
 [![UART Select Switch](assets/img/22131-XBee_Dev_Arduino_Shield-UARTSwitch.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-UARTSwitch.jpg "Click to enlarge")
 <figcaption markdown>UART Select Switch</figcaption>
@@ -28,6 +31,9 @@ The RX/TX pins on this shield are connected to the upload of the standard R3/R4 
 ### 3v3 Source Selection
 
 The 3v3 source selection switch allows the user to choose whether the Digi XBee Shield is powered from the R3/R4 board or from the onboard USB-C. Some XBee 3 modules, namely those with GNSS and LTE capabilities, consume more power than can be provided through the R3/R4 board. Use the onboard USB-C connector in this case. 
+
+The onboard VREG (using USB-C) outputs 3.3V and can provide
+up to 2A continuous current. Read further into the Buck Converter for more information. 
 
 <figure markdown>
 [![3V3 Source Selection Switch](assets/img/22131-XBee_Dev_Arduino_Shield-3V3OnOffSwitch.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-3V3OnOffSwitch.jpg "Click to enlarge")
@@ -46,7 +52,7 @@ The AP63203 is a 2A, synchronous buck converter with a wide input voltage range 
 
 ### Enable Pin Translation Circuit 
 
-When powering via the USB-C, the enable pin (5V) allows you to turn off power to the Digi XBee. 
+When powering via the USB-C, the enable pin (5V) allows you to turn off power to the Digi XBee. The enable pin is translated to 3.3V for the R3/R4 board.
 
 <figure markdown>
 [![Enable Pin](assets/img/22131-XBee_Dev_Arduino_Shield-ENPin.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-ENPin.jpg "Click to enlarge")
@@ -56,7 +62,9 @@ When powering via the USB-C, the enable pin (5V) allows you to turn off power to
 
 ### Qwiic Connector
 
-The Qwiic connector on the SparkFun Digi XBee® Development Arduino Shield (Qwiic) provides power and I<sup>2</sup>C connectivity to Qwiic breakout boards. Note that the I<sup>2</sup>C functionality is not enabled by default. 
+The Qwiic connector on the SparkFun Digi XBee® Development Arduino Shield (Qwiic) provides power and I<sup>2</sup>C connectivity to Qwiic breakout boards. The I<sup>2</sup>C functionality is not enabled by default, and the I<sup>2</sup>C lines are intended to be used by the R3/R4 board. 
+
+Note that IO11 and IO1 (connected to SDA and SCL) are extra IO and not intended to be used as I<sup>2</sup>C lines. If you are using the onboard Qwiic connector ensure that these pins are set to 'OUTPUT'.
 
 <figure markdown>
 [![Qwiic Connector](assets/img/22131-XBee_Dev_Arduino_Shield-QwiicConnex.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-QwiicConnex.jpg "Click to enlarge")
@@ -123,7 +131,7 @@ The RSSI/PWM output is enabled continuously, unlike other XBee products where th
 
 ### X1 Jumper
 
-By default, the Shield is not connected to the 5V rail on the connected R3/R4 board. Soldering this jumper will connect this power path. 
+By default, the Shield is not connected to the 5V rail on the connected R3/R4 board. Soldering this jumper will connect this power path. This is useful to use when powering both the Shield and the R3/R4 board from the onboard USB-C. 
 
 <figure markdown>
 [![X1 Jumper](assets/img/22131-XBee_Dev_Arduino_Shield-X1Jumper.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-X1Jumper.jpg "Click to enlarge")
@@ -186,10 +194,9 @@ The I<sup>2</sup>C jumper pulls the SDA and SCL pins to VDD (normally 3.3V) thro
 The board dimensions are illustrated in the drawing below; the listed measurements are in inches.
 
 <figure markdown>
-[![Board Dimensions](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_BoardOutline.png){ width="400" }](assets/board_files/22131_SparkFun_XBee_Arduino_Shield_Qwiic_BoardOutline.png "Click to enlarge")
+[![Board Dimensions](assets/board_files/22131_SparkFun_Digi_XBee_Arduino_Shield_Qwiic_BoardOutline.png){ width="400" }](assets/board_files/22131_SparkFun_Digi_XBee_Arduino_Shield_Qwiic_BoardOutline.png "Click to enlarge")
 <figcaption markdown>SparkFun Digi XBee® Arduino Shield Board Dimensions</figcaption>
 </figure>
-
 
 ??? tip "Need more measurements?"
 	For more information about the board's dimensions, users can download the [Eagle files](assets/board_files/SparkFun_Digi_XBee_Arduino_Shield_Qwiic_EagleFiles.zip) for the board. These files can be opened in Eagle and additional measurements can be made with the dimensions tool.
