@@ -32,8 +32,7 @@ The RX/TX pins on this shield are connected to the upload of the standard R3/R4 
 
 The 3v3 source selection switch allows the user to choose whether the Digi XBee Shield is powered from the R3/R4 board or from the onboard USB-C. Some XBee 3 modules, namely those with GNSS and LTE capabilities, consume more power than can be provided through the R3/R4 board. Use the onboard USB-C connector in this case. 
 
-The onboard VREG (using USB-C) outputs 3.3V and can provide
-up to 2A continuous current. Read further into the Buck Converter for more information. 
+The onboard VREG (using USB-C) outputs 3.3V and can provide up to 2A continuous current. The section on the Buck Converter provides more information. 
 
 <figure markdown>
 [![3V3 Source Selection Switch](assets/img/22131-XBee_Dev_Arduino_Shield-3V3OnOffSwitch.jpg){ width="400" }](assets/img/22131-XBee_Dev_Arduino_Shield-3V3OnOffSwitch.jpg "Click to enlarge")
